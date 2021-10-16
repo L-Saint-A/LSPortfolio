@@ -1,0 +1,63 @@
+@import "setup";
+
+
+$firstColor:#161712;
+$secondColor:#FFB01F;
+$thirdColor:#F2F2F2;
+$fourthColor:#4e4e4e;
+
+
+.wrapper {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+header {
+    height: 100vh !important ;
+    background-color: $fourthColor;
+    .topLine h2{
+        font-family: 'Permanent Marker', cursive;
+        font-size: 2.5rem;
+        color: $secondColor;
+        padding: 20px 0 0 50px;
+        margin: 0;
+    }
+    .headText {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    .mainTitle {
+        display: flex;
+        justify-content: right;
+        padding: 132px 68px 0 0 ;
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            color: $thirdColor;
+            font-size: 6rem;
+            margin: 0;
+        }
+        p {
+            font-family: 'Permanent Marker', cursive;
+            font-size: 4rem;
+            color: $secondColor;
+            margin: 0;
+            padding: 0 58px 0 0;
+            margin-top: -24px;
+        }
+    }
+}
+header .wrapper {
+    background: $firstColor;
+    height: 80%;
+}
+.box{
+    width:250px;
+    height:250px;
+    margin:1rem;
+    background-color: $secondColor;
+    background-size:contain;
+    clip-path: polygon(50% 0%, 75% 50%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
+    padding-right: 40px;
+}
