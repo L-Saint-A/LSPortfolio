@@ -6,6 +6,10 @@ $secondColor:#FFB01F;
 $thirdColor:#F2F2F2;
 $fourthColor:#4e4e4e;
 
+$firstFont: 'Roboto Slab', serif;
+$secondFont: 'Permanent Marker', cursive;
+$thirdFont: 'Open Sans', sans-serif;
+
 .wrapper {
     max-width: 1200px;
     width: 85%;
@@ -13,15 +17,8 @@ $fourthColor:#4e4e4e;
 }
 
 header {
-    height: 100vh !important ;
-    background-color: $fourthColor;
-    .topLine h2{
-        font-family: 'Permanent Marker', cursive;
-        font-size: 2.5rem;
-        color: $secondColor;
-        padding: 20px 0 0 50px;
-        margin: 0;
-    }
+    height: 68vh !important ;
+
     .headText {
         display: flex;
         flex-direction: column;
@@ -47,6 +44,36 @@ header {
         }
     }
 }
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+    h2 {
+
+        font-size: 32px;
+        font-family: $secondFont;
+        color: $secondColor;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+
+        padding: 0;
+        li {
+            padding-left: 20px;
+            font-size: 28px;
+            a {
+                font-family: $firstFont;
+                color: $thirdColor;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 header .wrapper {
     background: $firstColor;
     height: 80%;
@@ -59,4 +86,39 @@ header .wrapper {
     background-size:contain;
     clip-path: polygon(50% 0%, 75% 50%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
     padding-right: 40px;
+}
+body {
+    background-color: $firstColor;
+}
+.about {
+    display: flex;
+    background: $firstColor;
+    .aboutText {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 0 40px;
+        h3 {
+            font-family: $secondFont;
+            color: $secondColor;
+            font-size: 34px;
+            border: $secondColor 1px solid;
+        }
+        p {
+            font-family: $thirdFont;
+            color: $thirdColor;
+            font-size: 20px;
+            letter-spacing: 1.2px;
+            font-weight: bold;
+            border: $secondColor 1px solid;
+        }
+    }
+    .aboutPic {
+        img {
+            width: 300px;
+            height: 300px;
+            box-shadow: $secondColor -10px 10px;
+        }
+    }
 }
