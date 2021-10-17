@@ -4,7 +4,7 @@
 $firstColor:#161712;
 $secondColor:#FFB01F;
 $thirdColor:#F2F2F2;
-$fourthColor:#4e4e4e;
+$fourthColor:#2c2c2c;
 
 $firstFont: 'Roboto Slab', serif;
 $secondFont: 'Permanent Marker', cursive;
@@ -123,6 +123,56 @@ body {
             border-radius: 12%;
             width: 300px;
             margin-right: 40px;
+        }
+    }
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    .projectContainer {
+        display: flex;
+        background-color: $fourthColor;
+        justify-content: space-between;
+        div {
+            max-width: 390px;
+            min-width: 390px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h4 {
+            font-family: $firstFont;
+            font-size: 34px;
+            text-align: center;
+            padding: 0 12px;
+            a {
+                text-decoration: none;
+                color: $secondColor;
+            }
+        }
+        img {
+            border-radius: 12%;
+            min-height: 140px;
+            max-height: 140px;
+            min-width: 190px;
+            max-width: 190px;
+        }
+        p {
+            font-family: $thirdFont;
+            color: $thirdColor;
+            font-size: 20px;
+            letter-spacing: 1.2px;
+            font-weight: bold;
+            padding: 8px 18px;
+        }
+    }
+    h3 {
+        font-family: $secondFont;
+        color: $secondColor;
+        font-size: 34px;
+        .fas{
+            color: $thirdColor;
+            padding: 0 4px;
         }
     }
 }

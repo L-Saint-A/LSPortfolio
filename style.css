@@ -346,4 +346,55 @@ body {
   border-radius: 12%;
   width: 300px;
   margin-right: 40px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+.projects .projectContainer {
+  display: flex;
+  background-color: #2c2c2c;
+  justify-content: space-between;
+}
+.projects .projectContainer div {
+  max-width: 390px;
+  min-width: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects .projectContainer h4 {
+  font-family: "Roboto Slab", serif;
+  font-size: 34px;
+  text-align: center;
+  padding: 0 12px;
+}
+.projects .projectContainer h4 a {
+  text-decoration: none;
+  color: #FFB01F;
+}
+.projects .projectContainer img {
+  border-radius: 12%;
+  min-height: 140px;
+  max-height: 140px;
+  min-width: 190px;
+  max-width: 190px;
+}
+.projects .projectContainer p {
+  font-family: "Open Sans", sans-serif;
+  color: #F2F2F2;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  padding: 8px 18px;
+}
+.projects h3 {
+  font-family: "Permanent Marker", cursive;
+  color: #FFB01F;
+  font-size: 34px;
+}
+.projects h3 .fas {
+  color: #F2F2F2;
+  padding: 0 4px;
 }/*# sourceMappingURL=style.css.map */
