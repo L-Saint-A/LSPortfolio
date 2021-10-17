@@ -318,15 +318,16 @@ body {
 .about .aboutText {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 1;
-  padding: 0 40px;
+  padding: 0 48px;
 }
 .about .aboutText h3 {
   font-family: "Permanent Marker", cursive;
   color: #FFB01F;
   font-size: 34px;
-  border: #FFB01F 1px solid;
+}
+.about .aboutText h3 .fas {
+  color: #F2F2F2;
+  padding: 0 4px;
 }
 .about .aboutText p {
   font-family: "Open Sans", sans-serif;
@@ -334,10 +335,15 @@ body {
   font-size: 20px;
   letter-spacing: 1.2px;
   font-weight: bold;
-  border: #FFB01F 1px solid;
+}
+.about .aboutPic {
+  display: flex;
 }
 .about .aboutPic img {
+  box-shadow: #FFB01F -12px 12px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12%;
   width: 300px;
-  height: 300px;
-  box-shadow: #FFB01F -10px 10px;
+  margin-right: 40px;
 }/*# sourceMappingURL=style.css.map */
