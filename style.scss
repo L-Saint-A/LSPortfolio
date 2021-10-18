@@ -17,7 +17,7 @@ $thirdFont: 'Open Sans', sans-serif;
 }
 
 header {
-    height: 68vh !important ;
+    height: 800px !important ;
 
     .headText {
         display: flex;
@@ -52,7 +52,6 @@ header {
 
     padding: 0 30px;
     h2 {
-
         font-size: 36px;
         font-family: $secondFont;
         color: $secondColor;
@@ -60,14 +59,13 @@ header {
     ul {
         list-style: none;
         display: flex;
-
         padding: 0;
         li {
             padding-left: 20px;
             font-size: 28px;
             a {
                 font-family: $firstFont;
-                color: $thirdColor;
+                color: $firstColor;
                 text-decoration: none;
             }
         }
@@ -75,12 +73,13 @@ header {
 }
 
 header .wrapper {
-    background: $firstColor;
+    background-image: url(./Assets/photo-1509324115438-cafd17deefdb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 80%;
 }
 .box{
-    width:250px;
-    height:250px;
+    width:350px;
     margin:1rem;
     background-color: $secondColor;
     background-size:contain;
@@ -89,18 +88,22 @@ header .wrapper {
 }
 body {
     background-color: $firstColor;
+
 }
 .about {
     display: flex;
     background: $firstColor;
+    margin-top: 60px;
     .aboutText {
         display: flex;
         flex-direction: column;
-        padding: 0 48px;
+        margin: 0;
+        justify-content: center;
         h3 {
             font-family: $secondFont;
             color: $secondColor;
             font-size: 40px;
+            margin: 0;
             .fas{
                 color: $thirdColor;
                 padding: 0 4px;
@@ -112,6 +115,7 @@ body {
             font-size: 20px;
             letter-spacing: 1.2px;
             font-weight: bold;
+            margin: 0;
         }
     }
     .aboutPic {
@@ -148,6 +152,7 @@ body {
             &:hover{
                 transform: translateY(-10px);
                 border-radius: 4%;
+                box-shadow: $fourthColor 0 10px;
             }
         }
         h4 {

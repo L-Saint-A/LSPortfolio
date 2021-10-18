@@ -237,7 +237,7 @@ html {
 }
 
 header {
-  height: 68vh !important;
+  height: 800px !important;
 }
 header .headText {
   display: flex;
@@ -287,18 +287,19 @@ header .mainTitle p {
 }
 .navBar ul li a {
   font-family: "Roboto Slab", serif;
-  color: #F2F2F2;
+  color: #161712;
   text-decoration: none;
 }
 
 header .wrapper {
-  background: #161712;
+  background-image: url(./Assets/photo-1509324115438-cafd17deefdb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 80%;
 }
 
 .box {
-  width: 250px;
-  height: 250px;
+  width: 350px;
   margin: 1rem;
   background-color: #FFB01F;
   background-size: contain;
@@ -314,16 +315,19 @@ body {
 .about {
   display: flex;
   background: #161712;
+  margin-top: 60px;
 }
 .about .aboutText {
   display: flex;
   flex-direction: column;
-  padding: 0 48px;
+  margin: 0;
+  justify-content: center;
 }
 .about .aboutText h3 {
   font-family: "Permanent Marker", cursive;
   color: #FFB01F;
   font-size: 40px;
+  margin: 0;
 }
 .about .aboutText h3 .fas {
   color: #F2F2F2;
@@ -335,6 +339,7 @@ body {
   font-size: 20px;
   letter-spacing: 1.2px;
   font-weight: bold;
+  margin: 0;
 }
 .about .aboutPic {
   display: flex;
@@ -369,6 +374,7 @@ body {
 .projects .projectContainer div:hover {
   transform: translateY(-10px);
   border-radius: 4%;
+  box-shadow: #2c2c2c 0 10px;
 }
 .projects .projectContainer h4 {
   font-family: "Roboto Slab", serif;
