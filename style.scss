@@ -215,11 +215,23 @@ body {
     }
 }
 
+.skillhead {
+    h3 {
+        font-family: $secondFont;
+        color: $secondColor;
+        font-size: 40px;
+        .fas{
+            color: $thirdColor;
+            padding: 0 4px;
+        }
+    }
+}
+
 .contact {
     div{
         i{
-            color: $secondColor;
-            font-size: 60px;
+            color: $thirdColor;
+            font-size: 50px;
         }
     }
 }

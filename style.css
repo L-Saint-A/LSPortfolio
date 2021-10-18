@@ -434,7 +434,17 @@ body {
   font-size: 80px;
 }
 
-.contact div i {
+.skillhead h3 {
+  font-family: "Permanent Marker", cursive;
   color: #FFB01F;
-  font-size: 60px;
+  font-size: 40px;
+}
+.skillhead h3 .fas {
+  color: #F2F2F2;
+  padding: 0 4px;
+}
+
+.contact div i {
+  color: #F2F2F2;
+  font-size: 50px;
 }/*# sourceMappingURL=style.css.map */
