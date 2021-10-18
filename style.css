@@ -374,7 +374,6 @@ body {
 .projects .projectContainer div:hover {
   transform: translateY(-10px);
   border-radius: 4%;
-  box-shadow: #2c2c2c 0 10px;
 }
 .projects .projectContainer h4 {
   font-family: "Roboto Slab", serif;
@@ -413,10 +412,29 @@ body {
 
 .skills {
   display: flex;
-  justify-content: space-evenly;
-  padding: 44px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 0;
+  flex-wrap: wrap;
+}
+.skills div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c2c2c;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.skills div:hover {
+  border: 2px #FFB01F solid;
 }
 .skills div i {
   color: #FFB01F;
   font-size: 80px;
+}
+
+.contact div i {
+  color: #FFB01F;
+  font-size: 60px;
 }/*# sourceMappingURL=style.css.map */

@@ -152,7 +152,6 @@ body {
             &:hover{
                 transform: translateY(-10px);
                 border-radius: 4%;
-                box-shadow: $fourthColor 0 10px;
             }
         }
         h4 {
@@ -194,13 +193,33 @@ body {
 
 .skills {
     display: flex;
-    justify-content: space-evenly;
-    padding: 44px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 0;
+    flex-wrap: wrap;
     div{   
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $fourthColor;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        &:hover {
+            border: 2px $secondColor solid;
+        }
         i {
         color: $secondColor;
         font-size: 80px;
+        }
+    }
+}
+
+.contact {
+    div{
+        i{
+            color: $secondColor;
+            font-size: 60px;
         }
     }
 }
