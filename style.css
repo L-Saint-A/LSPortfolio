@@ -409,4 +409,14 @@ body {
 .projects h3 .fas {
   color: #F2F2F2;
   padding: 0 4px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 44px 0;
+}
+.skills div i {
+  color: #FFB01F;
+  font-size: 80px;
 }/*# sourceMappingURL=style.css.map */

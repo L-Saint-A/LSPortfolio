@@ -191,3 +191,16 @@ body {
         }
     }
 }
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 44px 0;
+    div{   
+
+        i {
+        color: $secondColor;
+        font-size: 80px;
+        }
+    }
+}
