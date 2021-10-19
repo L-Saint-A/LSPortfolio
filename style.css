@@ -541,7 +541,13 @@ div.icon.iconPS i {
     width: 80vw;
     flex-wrap: wrap;
   }
-}
-header .wrapper {
-  background-size: cover;
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact a {
+    padding: 10px 0;
+  }
 }/*# sourceMappingURL=style.css.map */

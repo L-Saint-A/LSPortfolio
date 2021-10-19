@@ -319,7 +319,6 @@ div.icon.iconPS {
                 transform: none;
             }
         }
-
     }
     .skillBox {
         display: flex;
@@ -329,7 +328,12 @@ div.icon.iconPS {
         width: 80vw;
         flex-wrap: wrap;
     }
-}
-header .wrapper {
-    background-size: cover;
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        a {
+            padding: 10px 0;
+        }
+    }
 }
