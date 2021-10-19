@@ -251,7 +251,7 @@ header .mainTitle {
 }
 header .mainTitle h1 {
   font-family: "Roboto Slab", serif;
-  color: #F2F2F2;
+  color: #E8E6E6;
   font-size: 6rem;
   margin: 0;
 }
@@ -292,7 +292,7 @@ header .mainTitle p {
 }
 
 header .wrapper {
-  background-image: url(./Assets/photo-1509324115438-cafd17deefdb.jpg);
+  background-image: url(./Assets/verbruci_iceland_blackandwhite_5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 80%;
@@ -330,12 +330,12 @@ body {
   margin: 0;
 }
 .about .aboutText h3 .fas {
-  color: #F2F2F2;
-  padding: 0 4px;
+  color: #E8E6E6;
+  padding: 0 14px;
 }
 .about .aboutText p {
   font-family: "Open Sans", sans-serif;
-  color: #F2F2F2;
+  color: #E8E6E6;
   font-size: 20px;
   letter-spacing: 1.2px;
   font-weight: bold;
@@ -394,11 +394,11 @@ body {
 }
 .projects .projectContainer p {
   font-family: "Open Sans", sans-serif;
-  color: #F2F2F2;
+  color: #E8E6E6;
   font-size: 20px;
   letter-spacing: 1.2px;
   font-weight: bold;
-  padding: 8px 18px;
+  padding: 18px 50px;
 }
 .projects h3 {
   font-family: "Permanent Marker", cursive;
@@ -406,18 +406,31 @@ body {
   font-size: 40px;
 }
 .projects h3 .fas {
-  color: #F2F2F2;
-  padding: 0 4px;
+  color: #E8E6E6;
+  padding: 0 12px;
 }
 
 .skills {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 64px 0;
-  flex-wrap: wrap;
+  padding: 60px 0;
 }
-.skills div {
+
+.skillHead h3 {
+  font-family: "Permanent Marker", cursive;
+  color: #FFB01F;
+  font-size: 40px;
+}
+.skillHead h3 .fas {
+  color: #E8E6E6;
+  padding: 0 12px;
+}
+
+.skillBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* We changed this property */
+  gap: 40px;
+}
+.skillBox .icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -426,25 +439,22 @@ body {
   height: 110px;
   border-radius: 50%;
 }
-.skills div:hover {
+.skillBox .icon:hover {
   border: 2px #FFB01F solid;
 }
-.skills div i {
+.skillBox .icon i {
   color: #FFB01F;
   font-size: 80px;
 }
 
-.skillhead h3 {
-  font-family: "Permanent Marker", cursive;
-  color: #FFB01F;
-  font-size: 40px;
-}
-.skillhead h3 .fas {
-  color: #F2F2F2;
-  padding: 0 4px;
+div.icon.iconPS i {
+  font-size: 70px;
 }
 
+.contact {
+  padding: 40px 0;
+}
 .contact div i {
-  color: #F2F2F2;
+  color: #E8E6E6;
   font-size: 50px;
 }/*# sourceMappingURL=style.css.map */

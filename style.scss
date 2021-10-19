@@ -3,7 +3,7 @@
 
 $firstColor:#161712;
 $secondColor:#FFB01F;
-$thirdColor:#F2F2F2;
+$thirdColor:#E8E6E6;
 $fourthColor:#2c2c2c;
 
 $firstFont: 'Roboto Slab', serif;
@@ -73,7 +73,7 @@ header {
 }
 
 header .wrapper {
-    background-image: url(./Assets/photo-1509324115438-cafd17deefdb.jpg);
+    background-image: url(./Assets/verbruci_iceland_blackandwhite_5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 80%;
@@ -106,7 +106,7 @@ body {
             margin: 0;
             .fas{
                 color: $thirdColor;
-                padding: 0 4px;
+                padding: 0 14px;
             }
         }
         p {
@@ -177,7 +177,7 @@ body {
             font-size: 20px;
             letter-spacing: 1.2px;
             font-weight: bold;
-            padding: 8px 18px;
+            padding: 18px 50px;
         }
     }
     h3 {
@@ -186,18 +186,32 @@ body {
         font-size: 40px;
         .fas{
             color: $thirdColor;
-            padding: 0 4px;
+            padding: 0 12px;
         }
     }
 }
 
 .skills {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 64px 0;
-    flex-wrap: wrap;
-    div{   
+    padding: 60px 0;
+}
+
+.skillHead {
+    h3 {
+        font-family: $secondFont;
+        color: $secondColor;
+        font-size: 40px;
+        .fas{
+            color: $thirdColor;
+            padding: 0 12px;
+        }
+    }
+}
+
+.skillBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* We changed this property */
+    gap: 40px;
+    .icon{   
         display: flex;
         justify-content: center;
         align-items: center;
@@ -215,19 +229,15 @@ body {
     }
 }
 
-.skillhead {
-    h3 {
-        font-family: $secondFont;
-        color: $secondColor;
-        font-size: 40px;
-        .fas{
-            color: $thirdColor;
-            padding: 0 4px;
-        }
+div.icon.iconPS {
+
+    i {
+        font-size: 70px;
     }
 }
 
 .contact {
+    padding: 40px 0;
     div{
         i{
             color: $thirdColor;
