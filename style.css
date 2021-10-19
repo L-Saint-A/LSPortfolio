@@ -345,7 +345,7 @@ body {
   letter-spacing: 1.2px;
   font-weight: bold;
   margin: 0;
-  padding: 19px 24px 8px 94px;
+  padding: 19px 24px 8px 54px;
 }
 .about .aboutPic {
   display: flex;
@@ -357,6 +357,7 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   width: 300px;
+  height: 300px;
   margin-right: 40px;
 }
 
@@ -366,7 +367,7 @@ body {
 }
 .projects .projectContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .projects .projectContainer div {
   max-width: 390px;
@@ -481,4 +482,29 @@ div.icon.iconPS i {
   color: #E8E6E6;
   font-size: 40px;
   padding: 0 18px;
+}
+
+@media (max-width: 992px) {
+  header .mainTitle h1 {
+    font-size: 5rem;
+  }
+  header .mainTitle p {
+    font-size: 3rem;
+  }
+
+  .about .aboutPic {
+    align-items: center;
+  }
+  .about .aboutPic img {
+    width: 268px;
+    height: 268px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: #FFB01F 0 18px;
+  }
+
+  .projects .projectContainer div {
+    min-width: 324px;
+  }
 }/*# sourceMappingURL=style.css.map */
