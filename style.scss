@@ -271,11 +271,11 @@ div.icon.iconPS {
     header .mainTitle {
         h1 {
         font-size: 5rem;
-    }
+        }
         p {
         font-size: 3rem;
+        }
     }
-}
     .about .aboutPic {
     align-items: center;
         img {
@@ -290,5 +290,46 @@ div.icon.iconPS {
     .projects .projectContainer div {
         min-width: 324px;
     }
+}
 
+@media (max-width: 768px) {
+    header .mainTitle {
+        h1 {
+        font-size: 4rem;
+        padding-bottom: 16px;
+        }
+        p {
+        font-size: 3rem;
+        }
+    }
+    .about {
+    .aboutPic {
+            img {
+            display: none;
+            }
+        }
+    }
+    .projects .projectContainer {
+        display: flex;
+        flex-direction: column;
+        div {
+            max-width: none;
+            &:hover {
+                box-shadow: 0 0 10px $secondColor;
+                transform: none;
+            }
+        }
+
+    }
+    .skillBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        width: 80vw;
+        flex-wrap: wrap;
+    }
+}
+header .wrapper {
+    background-size: cover;
 }

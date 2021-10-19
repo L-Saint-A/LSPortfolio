@@ -507,4 +507,41 @@ div.icon.iconPS i {
   .projects .projectContainer div {
     min-width: 324px;
   }
+}
+@media (max-width: 768px) {
+  header .mainTitle h1 {
+    font-size: 4rem;
+    padding-bottom: 16px;
+  }
+  header .mainTitle p {
+    font-size: 3rem;
+  }
+
+  .about .aboutPic img {
+    display: none;
+  }
+
+  .projects .projectContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects .projectContainer div {
+    max-width: none;
+  }
+  .projects .projectContainer div:hover {
+    box-shadow: 0 0 10px #FFB01F;
+    transform: none;
+  }
+
+  .skillBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 80vw;
+    flex-wrap: wrap;
+  }
+}
+header .wrapper {
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
