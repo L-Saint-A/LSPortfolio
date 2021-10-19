@@ -17,17 +17,20 @@ $thirdFont: 'Open Sans', sans-serif;
 }
 
 header {
-    height: 800px !important ;
-
+    height: 730px !important ;
+    .wrapper {
+        box-shadow: $secondColor 0 18px;
+    }
     .headText {
         display: flex;
         flex-direction: column;
-        text-align: right;
+        padding: 0 0 20px 60px ;
     }
     .mainTitle {
         display: flex;
-        justify-content: right;
-        padding: 132px 68px 0 0 ;
+        flex-direction: column-reverse;
+        height: 80%;
+        padding-right: 82px;
         h1 {
             font-family: 'Roboto Slab', serif;
             color: $thirdColor;
@@ -49,7 +52,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     padding: 0 30px;
     h2 {
         font-size: 36px;
@@ -65,7 +67,7 @@ header {
             font-size: 28px;
             a {
                 font-family: $firstFont;
-                color: $firstColor;
+                color: $secondColor;
                 text-decoration: none;
             }
         }
@@ -79,12 +81,13 @@ header .wrapper {
     height: 80%;
 }
 .box{
-    width:150px;
+    width:290px;
     margin:1rem;
     background-color: $secondColor;
     background-size:contain;
     clip-path: polygon(50% 0%, 75% 50%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
     padding-right: 40px;
+    height: 90px;
 }
 body {
     background-color: $firstColor;
@@ -116,15 +119,16 @@ body {
             letter-spacing: 1.2px;
             font-weight: bold;
             margin: 0;
+            padding: 6px 24px;
         }
     }
     .aboutPic {
         display: flex;
         img {
-            box-shadow: $secondColor -12px 12px;
+            box-shadow: $secondColor 0 18px;
             flex-direction: column;
             align-items: center;
-            border-radius: 12%;
+            border-radius: 6%;
             width: 300px;
             margin-right: 40px;
         }
@@ -192,7 +196,7 @@ body {
 }
 
 .skills {
-    padding: 60px 0;
+    padding: 2px 0;
 }
 
 .skillHead {
@@ -209,7 +213,9 @@ body {
 
 .skillBox {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* We changed this property */
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; /* We changed this property */
     gap: 40px;
     .icon{   
         display: flex;
@@ -237,11 +243,24 @@ div.icon.iconPS {
 }
 
 .contact {
-    padding: 40px 0;
+    padding: 66px 0;
+    display: flex;
+    justify-content: space-around;
     div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            color: $thirdColor;
+            text-decoration: none;
+            font-family: $firstFont;
+            display: flex;
+            align-items: center;
         i{
             color: $thirdColor;
-            font-size: 50px;
+            font-size: 40px;
+            padding: 0 18px;
+            }
         }
     }
 }

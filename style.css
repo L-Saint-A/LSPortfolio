@@ -237,17 +237,21 @@ html {
 }
 
 header {
-  height: 800px !important;
+  height: 730px !important;
+}
+header .wrapper {
+  box-shadow: #FFB01F 0 18px;
 }
 header .headText {
   display: flex;
   flex-direction: column;
-  text-align: right;
+  padding: 0 0 20px 60px;
 }
 header .mainTitle {
   display: flex;
-  justify-content: right;
-  padding: 132px 68px 0 0;
+  flex-direction: column-reverse;
+  height: 80%;
+  padding-right: 82px;
 }
 header .mainTitle h1 {
   font-family: "Roboto Slab", serif;
@@ -287,7 +291,7 @@ header .mainTitle p {
 }
 .navBar ul li a {
   font-family: "Roboto Slab", serif;
-  color: #161712;
+  color: #FFB01F;
   text-decoration: none;
 }
 
@@ -299,13 +303,14 @@ header .wrapper {
 }
 
 .box {
-  width: 150px;
+  width: 290px;
   margin: 1rem;
   background-color: #FFB01F;
   background-size: contain;
   -webkit-clip-path: polygon(50% 0%, 75% 50%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
           clip-path: polygon(50% 0%, 75% 50%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
   padding-right: 40px;
+  height: 90px;
 }
 
 body {
@@ -340,15 +345,16 @@ body {
   letter-spacing: 1.2px;
   font-weight: bold;
   margin: 0;
+  padding: 6px 24px;
 }
 .about .aboutPic {
   display: flex;
 }
 .about .aboutPic img {
-  box-shadow: #FFB01F -12px 12px;
+  box-shadow: #FFB01F 0 18px;
   flex-direction: column;
   align-items: center;
-  border-radius: 12%;
+  border-radius: 6%;
   width: 300px;
   margin-right: 40px;
 }
@@ -411,7 +417,7 @@ body {
 }
 
 .skills {
-  padding: 60px 0;
+  padding: 2px 0;
 }
 
 .skillHead h3 {
@@ -426,6 +432,8 @@ body {
 
 .skillBox {
   display: grid;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   /* We changed this property */
   gap: 40px;
@@ -452,9 +460,24 @@ div.icon.iconPS i {
 }
 
 .contact {
-  padding: 40px 0;
+  padding: 66px 0;
+  display: flex;
+  justify-content: space-around;
 }
-.contact div i {
+.contact div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact div a {
   color: #E8E6E6;
-  font-size: 50px;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  align-items: center;
+}
+.contact div a i {
+  color: #E8E6E6;
+  font-size: 40px;
+  padding: 0 18px;
 }/*# sourceMappingURL=style.css.map */
