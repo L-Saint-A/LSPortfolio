@@ -315,7 +315,7 @@ div.icon.iconPS {
         div {
             max-width: none;
             &:hover {
-                box-shadow: 0 0 10px $secondColor;
+                border: $secondColor solid 2px;
                 transform: none;
             }
         }

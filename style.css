@@ -529,7 +529,7 @@ div.icon.iconPS i {
     max-width: none;
   }
   .projects .projectContainer div:hover {
-    box-shadow: 0 0 10px #FFB01F;
+    border: #FFB01F solid 2px;
     transform: none;
   }
 
