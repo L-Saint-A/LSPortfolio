@@ -96,7 +96,7 @@ body {
 .about {
     display: flex;
     background: $firstColor;
-    margin-top: 60px;
+    padding: 0 0 70px 0px;
     .aboutText {
         display: flex;
         flex-direction: column;
@@ -119,7 +119,7 @@ body {
             letter-spacing: 1.2px;
             font-weight: bold;
             margin: 0;
-            padding: 6px 24px;
+            padding: 19px 24px 8px 94px;
         }
     }
     .aboutPic {
@@ -128,7 +128,8 @@ body {
             box-shadow: $secondColor 0 18px;
             flex-direction: column;
             align-items: center;
-            border-radius: 6%;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
             width: 300px;
             margin-right: 40px;
         }
@@ -243,7 +244,7 @@ div.icon.iconPS {
 }
 
 .contact {
-    padding: 66px 0;
+    padding: 98px 0 24px 0;
     display: flex;
     justify-content: space-around;
     div{
