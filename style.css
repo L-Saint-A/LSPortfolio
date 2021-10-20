@@ -245,7 +245,7 @@ header .wrapper {
 header .headText {
   display: flex;
   flex-direction: column;
-  padding: 0 0 20px 60px;
+  padding: 0 0 0 32px;
 }
 header .mainTitle {
   display: flex;
@@ -258,6 +258,7 @@ header .mainTitle h1 {
   color: #E8E6E6;
   font-size: 6rem;
   margin: 0;
+  text-shadow: #2c2c2c 0 0 4px;
 }
 header .mainTitle p {
   font-family: "Permanent Marker", cursive;
@@ -273,12 +274,14 @@ header .mainTitle p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 52px;
+  background: #6460604a;
 }
 .navBar h2 {
   font-size: 36px;
   font-family: "Permanent Marker", cursive;
   color: #FFB01F;
+  margin: 10px 0;
 }
 .navBar ul {
   list-style: none;
@@ -296,7 +299,7 @@ header .mainTitle p {
 }
 
 header .wrapper {
-  background-image: url(./Assets/verbruci_iceland_blackandwhite_5.jpg);
+  background-image: url(./Assets/deadPlane.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 80%;

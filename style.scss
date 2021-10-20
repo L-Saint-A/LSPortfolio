@@ -24,7 +24,7 @@ header {
     .headText {
         display: flex;
         flex-direction: column;
-        padding: 0 0 20px 60px ;
+        padding: 0 0 0 32px;
     }
     .mainTitle {
         display: flex;
@@ -36,6 +36,7 @@ header {
             color: $thirdColor;
             font-size: 6rem;
             margin: 0;
+            text-shadow: $fourthColor 0 0 4px;
         }
         p {
             font-family: 'Permanent Marker', cursive;
@@ -52,11 +53,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 52px;
+    background: #6460604a;
     h2 {
         font-size: 36px;
         font-family: $secondFont;
         color: $secondColor;
+        margin: 10px 0;
     }
     ul {
         list-style: none;
@@ -75,7 +78,7 @@ header {
 }
 
 header .wrapper {
-    background-image: url(./Assets/verbruci_iceland_blackandwhite_5.jpg);
+    background-image: url(./Assets/deadPlane.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 80%;
@@ -337,3 +340,10 @@ div.icon.iconPS {
         }
     }
 }
+
+
+
+// 576px for portrait phones.
+// 768px for tablets.
+// 992px for laptops.
+// 1200px for large devices.
