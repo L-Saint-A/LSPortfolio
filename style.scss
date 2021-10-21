@@ -89,8 +89,8 @@ nav {
     position: relative;
     li.one {
         transition: .8s;
-        left: -308px;
-        top: -18px;
+        left: -374px;
+        top: -16px;
         a {
             color: $secondColor;    
             font-size: 30px; 
@@ -99,8 +99,8 @@ nav {
     }
     li.two {
         transition: .8s;
-        left: -180px;
-        top: -18px;
+        left: -248px;
+        top: -16px;
         a {
             color: $secondColor;    
             font-size: 30px; 
@@ -109,8 +109,8 @@ nav {
     }
     li.three {
         transition: .8s;
-        left: -52px;
-        top: -18px;
+        left: -82px;
+        top: -16px;
         a {
             color: $secondColor;    
             font-size: 30px; 
@@ -118,8 +118,6 @@ nav {
         }
     }
 }
-
-
 
 .navBar {
     display: flex;
@@ -304,6 +302,7 @@ body {
         }
     }
 }
+
 
 .skills {
     padding: 2px 0;

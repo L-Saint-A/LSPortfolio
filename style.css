@@ -309,8 +309,8 @@ nav ul li a {
 }
 .navItems.show li.one {
   transition: 0.8s;
-  left: -308px;
-  top: -18px;
+  left: -374px;
+  top: -16px;
 }
 .navItems.show li.one a {
   color: #FFB01F;
@@ -319,8 +319,8 @@ nav ul li a {
 }
 .navItems.show li.two {
   transition: 0.8s;
-  left: -180px;
-  top: -18px;
+  left: -248px;
+  top: -16px;
 }
 .navItems.show li.two a {
   color: #FFB01F;
@@ -329,8 +329,8 @@ nav ul li a {
 }
 .navItems.show li.three {
   transition: 0.8s;
-  left: -52px;
-  top: -18px;
+  left: -82px;
+  top: -16px;
 }
 .navItems.show li.three a {
   color: #FFB01F;
