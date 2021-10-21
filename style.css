@@ -1,5 +1,5 @@
 html {
-  line-height: 1.15;
+  line-height: 1.45;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -237,15 +237,10 @@ html {
 }
 
 header {
-  height: 100vh !important;
-  background-color: #4e4e4e;
+  height: 730px !important;
 }
-header .topLine h2 {
-  font-family: "Permanent Marker", cursive;
-  font-size: 2.5rem;
-  color: #FFB01F;
-  padding: 20px 0 0 50px;
-  margin: 0;
+header .wrapper {
+  box-shadow: #FFB01F 0 18px;
 }
 header .headText {
   display: flex;
@@ -254,14 +249,19 @@ header .headText {
 }
 header .mainTitle {
   display: flex;
-  justify-content: right;
-  padding: 132px 68px 0 0;
+  flex-direction: column-reverse;
+  height: 80%;
+  padding-right: 82px;
 }
 header .mainTitle h1 {
   font-family: "Roboto Slab", serif;
-  color: #F2F2F2;
+  color: #E8E6E6;
   font-size: 6rem;
   margin: 0;
+  text-shadow: #2c2c2c 0 0 4px;
+}
+header .mainTitle h1::before {
+  border-top: #FFB01F 2px solid;
 }
 header .mainTitle p {
   font-family: "Permanent Marker", cursive;
@@ -272,18 +272,385 @@ header .mainTitle p {
   margin-top: -24px;
 }
 
+nav {
+  display: flex;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #FFB01F;
+  padding: 0 8px;
+}
+
+.navItems {
+  position: relative;
+}
+.navItems li {
+  position: absolute;
+  transition: 0.5s;
+  left: 50px;
+  top: -8px;
+  margin: 0;
+  padding: 0;
+}
+.navItems li a {
+  color: #2c2c2c;
+  font-size: 0.5px;
+  transition: 0.5s;
+  font-family: "Permanent Marker", cursive;
+  text-shadow: #2c2c2c 0 0 6px;
+}
+
+.navItems.show {
+  position: relative;
+}
+.navItems.show li.one {
+  transition: 0.8s;
+  left: -308px;
+  top: -18px;
+}
+.navItems.show li.one a {
+  color: #FFB01F;
+  font-size: 30px;
+  transition: 0.8s;
+}
+.navItems.show li.two {
+  transition: 0.8s;
+  left: -180px;
+  top: -18px;
+}
+.navItems.show li.two a {
+  color: #FFB01F;
+  font-size: 30px;
+  transition: 0.8s;
+}
+.navItems.show li.three {
+  transition: 0.8s;
+  left: -52px;
+  top: -18px;
+}
+.navItems.show li.three a {
+  color: #FFB01F;
+  font-size: 30px;
+  transition: 0.8s;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 52px;
+  background: #6460604a;
+}
+.navBar h2 {
+  font-size: 36px;
+  font-family: "Permanent Marker", cursive;
+  color: #FFB01F;
+  text-shadow: 2px 2px #00000040;
+  margin: 10px 0;
+}
+
+.menuButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.menuButtonBurger {
+  width: 28px;
+  height: 6px;
+  background: #FFB01F;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #2c2c2c;
+  transition: all 0.5s ease-in-out;
+}
+
+.menuButtonBurger::before,
+.menuButtonBurger::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 6px;
+  background: #FFB01F;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #2c2c2c;
+  transition: all 0.5s ease-in-out;
+}
+
+.menuButtonBurger::before {
+  transform: translateY(-12px);
+}
+
+.menuButtonBurger::after {
+  transform: translateY(12px);
+}
+
+.menuButton.open .menuButtonBurger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menuButton.open .menuButtonBurger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menuButton.open .menuButtonBurger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
 header .wrapper {
-  background: #161712;
+  background-image: url(./Assets/deadPlane.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 80%;
 }
 
-.box {
-  width: 250px;
-  height: 250px;
-  margin: 1rem;
-  background-color: #FFB01F;
-  background-size: contain;
-  -webkit-clip-path: polygon(50% 0%, 75% 50%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
-          clip-path: polygon(50% 0%, 75% 50%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
-  padding-right: 40px;
+body {
+  background-color: #161712;
+}
+
+.about {
+  display: flex;
+  background: #161712;
+  padding: 0 0 70px 0px;
+}
+.about .aboutText {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+}
+.about .aboutText h3 {
+  font-family: "Permanent Marker", cursive;
+  color: #FFB01F;
+  font-size: 40px;
+  margin: 0;
+}
+.about .aboutText h3 .fas {
+  color: #E8E6E6;
+  padding: 0 14px;
+}
+.about .aboutText p {
+  font-family: "Open Sans", sans-serif;
+  color: #E8E6E6;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  margin: 0;
+  padding: 19px 24px 8px 54px;
+}
+.about .aboutPic {
+  display: flex;
+}
+.about .aboutPic img {
+  box-shadow: #FFB01F 0 18px;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+.projects .projectContainer {
+  display: flex;
+  justify-content: center;
+}
+.projects .projectContainer div {
+  max-width: 390px;
+  min-width: 390px;
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  text-align: center;
+}
+.projects .projectContainer div:hover {
+  transform: translateY(-10px);
+  border-radius: 4%;
+}
+.projects .projectContainer h4 {
+  font-family: "Roboto Slab", serif;
+  font-size: 34px;
+  text-align: center;
+  padding: 0 12px;
+}
+.projects .projectContainer h4 a {
+  text-decoration: none;
+  color: #FFB01F;
+}
+.projects .projectContainer img {
+  border-radius: 4%;
+  min-height: 140px;
+  max-height: 140px;
+  min-width: 190px;
+  max-width: 190px;
+}
+.projects .projectContainer p {
+  font-family: "Open Sans", sans-serif;
+  color: #E8E6E6;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  padding: 18px 50px;
+}
+.projects h3 {
+  font-family: "Permanent Marker", cursive;
+  color: #FFB01F;
+  font-size: 40px;
+}
+.projects h3 .fas {
+  color: #E8E6E6;
+  padding: 0 12px;
+}
+
+.skills {
+  padding: 2px 0;
+}
+
+.skillHead h3 {
+  font-family: "Permanent Marker", cursive;
+  color: #FFB01F;
+  font-size: 40px;
+}
+.skillHead h3 .fas {
+  color: #E8E6E6;
+  padding: 0 12px;
+}
+
+.skillBox {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* We changed this property */
+  gap: 40px;
+}
+.skillBox .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c2c2c;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.skillBox .icon:hover {
+  border: 3px #FFB01F solid;
+}
+.skillBox .icon i {
+  color: #FFB01F;
+  font-size: 80px;
+}
+
+div.icon.iconOdd i {
+  font-size: 66px;
+}
+
+.contact {
+  padding: 98px 0 24px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.contact div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact div a {
+  color: #E8E6E6;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  align-items: center;
+}
+.contact div a i {
+  color: #E8E6E6;
+  font-size: 40px;
+  padding: 0 18px;
+}
+
+@media (max-width: 992px) {
+  header .mainTitle h1 {
+    font-size: 5rem;
+  }
+  header .mainTitle p {
+    font-size: 3rem;
+  }
+
+  .about .aboutPic {
+    align-items: center;
+  }
+  .about .aboutPic img {
+    width: 268px;
+    height: 268px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: #FFB01F 0 18px;
+  }
+
+  .projects .projectContainer div {
+    min-width: 324px;
+  }
+}
+@media (max-width: 768px) {
+  header .mainTitle h1 {
+    font-size: 4rem;
+    padding-bottom: 16px;
+  }
+  header .mainTitle p {
+    font-size: 3rem;
+  }
+
+  .about .aboutPic img {
+    display: none;
+  }
+
+  .projects .projectContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects .projectContainer div {
+    max-width: none;
+  }
+  .projects .projectContainer div:hover {
+    border: #FFB01F solid 2px;
+    transform: none;
+  }
+
+  .skillBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 80vw;
+    flex-wrap: wrap;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact a {
+    padding: 10px 0;
+  }
 }/*# sourceMappingURL=style.css.map */

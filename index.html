@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="icon" href="./Assets/favicon.ico">
     <link rel="stylesheet" href="./style.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Slab:wght@900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Slab:wght@900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
 
     <title>Portfolio</title>
 </head>
@@ -18,25 +20,113 @@
 <body>
     <header>
         <div class="wrapper">
-            <div class="topLine">
+            <div class="navBar">
                 <h2>LSA</h2>
+                <nav>
+                    <ul class="navItems">
+                        <li class="one"><a href="#">beep</a></li>
+                        <li class="two"><a href="#">boop</a></li>
+                        <li class="three"><a href="#">info</a></li>
+                    </ul>
+                    <div class="menuButton">
+                        <div class="menuButtonBurger"></div>
+                    </div>
+                </nav>
             </div>
             <div class="mainTitle">
-                <div class="box">
-                </div>
                 <div class="headText">
                     <h1>Lou Saint-Andre</h1>
-                    <p>A little about me</p>
+                    <p>Portfolio</p>
                 </div>
             </div>
         </div>
     </header>
 
 
-    <main></main>
-
-
-
+    <main>
+        <section id="about" class="about wrapper">
+            <div class="aboutText">
+            <h3><i class="fas fa-caret-down"></i>Profile</h3>
+            <p>Junior-level Developer and recent graduate of Juno College of Technology. I've worked for over a decade within aviation maintenance, and have a ton of unique experience in leading teams, training, and quality assurance. When I'm not coding, I spend my time illustrating both in Photoshop and with ink, attending a local rock show, and enjoying the occasional craft beer. 
+            </p>
+            </div>
+            <div class="aboutPic">
+                <img src="./Assets/profPic.PNG" alt="">
+                <div class="box1"></div>
+            </div>
+        </section>
+        <section id="projects" class="projects wrapper">
+            <div>
+                <h3><i class="fas fa-caret-down"></i>Projects</h3>
+            </div>
+            <div class="projectContainer">
+                <div>
+                    <h4><a href="https://fire-and-forget-fitness.github.io/Canuto-Saint-AndreProjectTwo/">Fire & Forget</a></h4>
+                    <a href="https://fire-and-forget-fitness.github.io/Canuto-Saint-AndreProjectTwo/"><img src="./Assets/captureF&F.PNG" alt="" url=""></a>
+                    <p>An exercise app designed for targeting specific muscle groups. You simply enter your desired area for strengthening, and the app returns exercises ideal for that area. Uses a fitness API and features a bilingual toggle</p>
+                </div>
+                <div>
+                    <h4><a href="https://a-bitter-parent-2021.netlify.app/">A Bitter Parent</a></h4>
+                    <a href="https://a-bitter-parent-2021.netlify.app/"><img src="./Assets/captureBitter.PNG" alt=""></a> 
+                    <p>A nutritional guide designed for children begging for a sugary treat. User inputs the desired item into the field and the app returns a healthier alternative. Features Firebase functionality for storing memorable pairings. Built by team of four at Juno College.</p>
+                </div>
+                <div>
+                    <h4><a href="https://heather-weather.netlify.app/">Scary Weather</a></h4>
+                    <a href="https://heather-weather.netlify.app/"><img src="./Assets/captureWeather.PNG" alt=""></a> 
+                    <p>A simple and elegant weather forecaster with a spooky Halloween motif. Features a dropdown with some of my favourite cities, and some really fun styling if I do say so myself.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="wrapper skills">
+            <div class="skillHead">
+                <h3><i class="fas fa-caret-down"></i>Skills</h3>
+            </div>
+            <div class="skillBox">
+                <div class="icon">
+                    <i class="fab fa-css3-alt" alt="css logo"></i>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-js-square" alt="javascript logo"></i>
+                </div>
+                <div class="icon iconOdd">
+                    <i class="fas fa-code" alt="code logo"></i>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-react" alt="react logo"></i>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-git-alt"></i>
+                </div>
+                <div class="icon">
+                    <i class="devicon-sass-original"></i>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-jira"></i>
+                </div>
+                <div class="icon iconOdd">
+                    <i class="devicon-photoshop-line"></i>
+                </div>
+                <div class="icon">
+                    <i class="devicon-firebase-plain"></i>
+                </div>
+                <div class="icon">
+                    <i class="devicon-jquery-plain"></i>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact wrapper">
+            <div>
+                <a href="mailto:l.saint.andre86@gmail.com"><i class="far fa-envelope"></i>l.saint.andre86@gmail.com</a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/lousa/"><i class="fab fa-linkedin"></i>www.linkedin.com/in/lousa</a>
+            </div>
+            <div class="icon">
+                <a href="https://github.com/L-Saint-A"><i class="fab fa-github"></i>github.com/L-Saint-A</a>
+            </div>
+        </section>
+    </main>
     <footer></footer>
+    <script src="./script.js"></script>
 </body>
 </html>
