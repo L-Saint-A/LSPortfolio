@@ -283,19 +283,59 @@ header .mainTitle p {
   color: #FFB01F;
   margin: 10px 0;
 }
-.navBar ul {
-  list-style: none;
+
+.menuButton {
+  position: relative;
   display: flex;
-  padding: 0;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
-.navBar ul li {
-  padding-left: 20px;
-  font-size: 28px;
+
+.menuButtonBurger {
+  width: 28px;
+  height: 6px;
+  background: #FFB01F;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #2c2c2c;
+  transition: all 0.5s ease-in-out;
 }
-.navBar ul li a {
-  font-family: "Roboto Slab", serif;
-  color: #FFB01F;
-  text-decoration: none;
+
+.menuButtonBurger::before,
+.menuButtonBurger::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 6px;
+  background: #FFB01F;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #2c2c2c;
+  transition: all 0.5s ease-in-out;
+}
+
+.menuButtonBurger::before {
+  transform: translateY(-12px);
+}
+
+.menuButtonBurger::after {
+  transform: translateY(12px);
+}
+
+.menuButton.open .menuButtonBurger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menuButton.open .menuButtonBurger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menuButton.open .menuButtonBurger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
 
 header .wrapper {
@@ -451,9 +491,10 @@ body {
   width: 110px;
   height: 110px;
   border-radius: 50%;
+  transition: all 0.5s ease-in-out;
 }
 .skillBox .icon:hover {
-  border: 2px #FFB01F solid;
+  border: 3px #FFB01F solid;
 }
 .skillBox .icon i {
   color: #FFB01F;
@@ -461,7 +502,7 @@ body {
 }
 
 div.icon.iconPS i {
-  font-size: 70px;
+  font-size: 68px;
 }
 
 .contact {

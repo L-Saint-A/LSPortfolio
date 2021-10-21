@@ -61,21 +61,61 @@ header {
         color: $secondColor;
         margin: 10px 0;
     }
-    ul {
-        list-style: none;
-        display: flex;
-        padding: 0;
-        li {
-            padding-left: 20px;
-            font-size: 28px;
-            a {
-                font-family: $firstFont;
-                color: $secondColor;
-                text-decoration: none;
-            }
-        }
-    }
 }
+
+.menuButton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menuButtonBurger {
+    width: 28px;
+    height: 6px;
+    background: $secondColor;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px $fourthColor;
+    transition: all .5s ease-in-out;
+}
+
+.menuButtonBurger::before,
+.menuButtonBurger::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 6px;
+    background: $secondColor;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px $fourthColor;
+    transition: all .5s ease-in-out;
+}
+
+.menuButtonBurger::before {
+    transform: translateY(-12px);
+}
+
+.menuButtonBurger::after {
+    transform: translateY(12px);
+}
+
+.menuButton.open .menuButtonBurger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menuButton.open .menuButtonBurger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menuButton.open .menuButtonBurger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
 
 header .wrapper {
     background-image: url(./Assets/deadPlane.jpg);
@@ -230,8 +270,9 @@ body {
         width: 110px;
         height: 110px;
         border-radius: 50%;
+        transition: all .5s ease-in-out;
         &:hover {
-            border: 2px $secondColor solid;
+            border: 3px $secondColor solid;
         }
         i {
         color: $secondColor;
@@ -243,7 +284,7 @@ body {
 div.icon.iconPS {
 
     i {
-        font-size: 70px;
+        font-size: 68px;
     }
 }
 
