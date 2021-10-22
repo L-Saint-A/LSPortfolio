@@ -397,6 +397,58 @@ div.icon.iconOdd i {
     .projects .projectContainer div {
         min-width: 324px;
     }
+    .navItems.show {
+        position: relative;
+        li.one {
+            transition: .8s;
+            left: 0px;
+            top: 160px;
+            a {
+                color: $secondColor;    
+                font-size: 30px; 
+                transition: .8s;   
+            }
+        }
+        li.two {
+            transition: .8s;
+            left: -36px;
+            top: 106px;
+            a {
+                color: $secondColor;    
+                font-size: 30px; 
+                transition: .8s;   
+            }
+        }
+        li.three {
+            transition: .8s;
+            left: 0px;
+            top: 52px;
+            a {
+                color: $secondColor;    
+                font-size: 30px; 
+                transition: .8s;   
+            }
+        }
+    }
+    .projects .projectContainer {
+        display: flex;
+        flex-direction: column;
+        div {
+            max-width: none;
+            &:hover {
+                border: $secondColor solid 2px;
+                transform: none;
+            }
+        }
+    }
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        a {
+            padding: 10px 0;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -416,17 +468,17 @@ div.icon.iconOdd i {
             }
         }
     }
-    .projects .projectContainer {
-        display: flex;
-        flex-direction: column;
-        div {
-            max-width: none;
-            &:hover {
-                border: $secondColor solid 2px;
-                transform: none;
-            }
-        }
-    }
+    // .projects .projectContainer {
+    //     display: flex;
+    //     flex-direction: column;
+    //     div {
+    //         max-width: none;
+    //         &:hover {
+    //             border: $secondColor solid 2px;
+    //             transform: none;
+    //         }
+    //     }
+    // }
     .skillBox {
         display: flex;
         justify-content: center;
@@ -435,14 +487,8 @@ div.icon.iconOdd i {
         width: 80vw;
         flex-wrap: wrap;
     }
-    .contact {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        a {
-            padding: 10px 0;
-        }
-    }
+
+
 }
 
 
