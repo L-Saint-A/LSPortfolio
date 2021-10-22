@@ -610,18 +610,39 @@ div.icon.iconOdd i {
   .projects .projectContainer div {
     min-width: 324px;
   }
-}
-@media (max-width: 768px) {
-  header .mainTitle h1 {
-    font-size: 4rem;
-    padding-bottom: 16px;
-  }
-  header .mainTitle p {
-    font-size: 3rem;
-  }
 
-  .about .aboutPic img {
-    display: none;
+  .navItems.show {
+    position: relative;
+  }
+  .navItems.show li.one {
+    transition: 0.8s;
+    left: 0px;
+    top: 160px;
+  }
+  .navItems.show li.one a {
+    color: #FFB01F;
+    font-size: 30px;
+    transition: 0.8s;
+  }
+  .navItems.show li.two {
+    transition: 0.8s;
+    left: -36px;
+    top: 106px;
+  }
+  .navItems.show li.two a {
+    color: #FFB01F;
+    font-size: 30px;
+    transition: 0.8s;
+  }
+  .navItems.show li.three {
+    transition: 0.8s;
+    left: 0px;
+    top: 52px;
+  }
+  .navItems.show li.three a {
+    color: #FFB01F;
+    font-size: 30px;
+    transition: 0.8s;
   }
 
   .projects .projectContainer {
@@ -636,15 +657,6 @@ div.icon.iconOdd i {
     transform: none;
   }
 
-  .skillBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    width: 80vw;
-    flex-wrap: wrap;
-  }
-
   .contact {
     display: flex;
     flex-wrap: wrap;
@@ -652,5 +664,27 @@ div.icon.iconOdd i {
   }
   .contact a {
     padding: 10px 0;
+  }
+}
+@media (max-width: 768px) {
+  header .mainTitle h1 {
+    font-size: 4rem;
+    padding-bottom: 16px;
+  }
+  header .mainTitle p {
+    font-size: 3rem;
+  }
+
+  .about .aboutPic img {
+    display: none;
+  }
+
+  .skillBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 80vw;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */
