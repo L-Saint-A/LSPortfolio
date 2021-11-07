@@ -410,8 +410,11 @@ nav ul li a {
 
 header .wrapper {
   background-image: url(./Assets/deadPlane.jpg);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat center center fixed;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   height: 80%;
 }
 
@@ -539,7 +542,6 @@ body {
   justify-items: center;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  /* We changed this property */
   gap: 40px;
 }
 .skillBox .icon {
@@ -686,5 +688,20 @@ div.icon.iconOdd i {
     gap: 40px;
     width: 80vw;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  header .mainTitle {
+    margin-top: 35%;
+    justify-content: center;
+  }
+  header .mainTitle h1 {
+    font-size: 2.6rem;
+    padding-bottom: 16px;
+  }
+  header .mainTitle p {
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */

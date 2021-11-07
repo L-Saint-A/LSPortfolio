@@ -187,8 +187,11 @@ nav {
 
 header .wrapper {
     background-image: url(./Assets/deadPlane.jpg);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat center center fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     height: 80%;
 }
 
@@ -321,7 +324,7 @@ body {
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; /* We changed this property */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; 
     gap: 40px;
     .icon{   
         display: flex;
@@ -465,17 +468,6 @@ div.icon.iconOdd i {
             }
         }
     }
-    // .projects .projectContainer {
-    //     display: flex;
-    //     flex-direction: column;
-    //     div {
-    //         max-width: none;
-    //         &:hover {
-    //             border: $secondColor solid 2px;
-    //             transform: none;
-    //         }
-    //     }
-    // }
     .skillBox {
         display: flex;
         justify-content: center;
@@ -484,10 +476,23 @@ div.icon.iconOdd i {
         width: 80vw;
         flex-wrap: wrap;
     }
-
-
 }
 
+@media (max-width: 768px) {
+    header .mainTitle {
+        margin-top: 35%;
+        justify-content: center;
+        h1 {
+        font-size: 2.6rem;
+        padding-bottom: 16px;
+        }
+        p {
+        font-size: 2.4rem;
+        margin: 0;
+        padding: 0;
+        }
+    }
+}
 
 
 // 576px for portrait phones.
