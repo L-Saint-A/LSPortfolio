@@ -490,6 +490,16 @@ input#submit {
             padding: 10px 0;
         }
     }
+    .form {
+        form {
+            input#email {
+                width: 60%;
+            }
+            textArea {
+                width: 80%;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -552,6 +562,19 @@ input#submit {
         font-size: 2.2rem;
         margin: 0;
         padding: 0;
+        }
+    }
+    .form {
+        form div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input#email {
+                width: 70%;
+            }
+            textArea {
+                width: 90%;
+            }
         }
     }
 }

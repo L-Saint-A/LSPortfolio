@@ -712,6 +712,13 @@ input#submit:hover {
   .contact a {
     padding: 10px 0;
   }
+
+  .form form input#email {
+    width: 60%;
+  }
+  .form form textArea {
+    width: 80%;
+  }
 }
 @media (max-width: 768px) {
   header .mainTitle h1 {
@@ -768,6 +775,18 @@ input#submit:hover {
     font-size: 2.2rem;
     margin: 0;
     padding: 0;
+  }
+
+  .form form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form form div input#email {
+    width: 70%;
+  }
+  .form form div textArea {
+    width: 90%;
   }
 }
 @media (max-width: 460px) {
