@@ -349,8 +349,41 @@ div.icon.iconOdd i {
         font-size: 66px;
 }
 
-
-
+.form {
+    margin: 60px 0 30px 0;
+    font-size: 20px;
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: $secondFont;
+        input{
+            margin-bottom: 10px;
+            background-color: $firstColor;
+            color: $thirdColor;
+            border: 2px $thirdColor solid;
+            border-radius: 25px;
+            padding-left: 12px;
+            letter-spacing: 1.25px;
+        }
+        input#email {
+            width: 40%;
+        }
+        textArea {
+            width: 60%;
+            resize: none;
+            background-color: $firstColor;
+            border: 2px $thirdColor solid;
+            border-radius: 25px;
+        }
+    }
+}
+input#submit {
+    margin: 22px 0;
+    padding: 4px 12px;
+    font-size: 22px;
+}
 .contact {
     padding: 98px 0 24px 0;
     display: flex;
