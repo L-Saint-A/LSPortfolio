@@ -704,6 +704,10 @@ div.icon.iconOdd i {
     margin: 0;
     padding: 0;
   }
+
+  .navBar {
+    padding: 0 24px;
+  }
 }
 @media (max-width: 560px) {
   header .mainTitle {
@@ -723,7 +727,7 @@ div.icon.iconOdd i {
 }
 @media (max-width: 460px) {
   header .mainTitle {
-    margin-top: 70%;
+    margin-top: calc(70% - 100px);
   }
   header .mainTitle h1 {
     font-size: 2.2rem;
