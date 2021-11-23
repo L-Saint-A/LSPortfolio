@@ -2,12 +2,12 @@
 
 
 $firstColor:#161712;
-$secondColor:#FFB01F;
+$secondColor:#39FF14;
 $thirdColor:#E8E6E6;
 $fourthColor:#2c2c2c;
 
 $firstFont: 'Roboto Slab', serif;
-$secondFont: 'Permanent Marker', cursive;
+$secondFont: 'Orbitron', sans-serif;
 $thirdFont: 'Open Sans', sans-serif;
 
 .wrapper {
@@ -17,7 +17,9 @@ $thirdFont: 'Open Sans', sans-serif;
 }
 
 header {
-    height: 730px !important ;
+    height: 830px !important ;
+    border-bottom: $secondColor 10px solid;
+    padding-bottom: 40px;
     .wrapper {
         box-shadow: $secondColor 0 18px;
     }
@@ -122,7 +124,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 52px;
-    background: #6460604a;
     h2 {
         font-size: 36px;
         font-family: $secondFont;
@@ -185,14 +186,11 @@ nav {
     transform: rotate(-45deg) translate(35px, 35px);
 }
 
-header .wrapper {
-    background-image: url(./Assets/deadPlane.jpg);
-    background-repeat: no-repeat center center fixed;
+header {
+    background-image: url(./Assets/portfoliohead.png);
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    height: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 body {
@@ -202,7 +200,7 @@ body {
 .about {
     display: flex;
     background: $firstColor;
-    padding: 0 0 70px 0px;
+    padding: 120px 0 70px 0px;
     .aboutText {
         display: flex;
         flex-direction: column;
@@ -242,6 +240,7 @@ body {
         }
     }
 }
+
 .projects {
     display: flex;
     flex-direction: column;

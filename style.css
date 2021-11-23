@@ -237,10 +237,12 @@ html {
 }
 
 header {
-  height: 730px !important;
+  height: 830px !important;
+  border-bottom: #39FF14 10px solid;
+  padding-bottom: 40px;
 }
 header .wrapper {
-  box-shadow: #FFB01F 0 18px;
+  box-shadow: #39FF14 0 18px;
 }
 header .headText {
   display: flex;
@@ -261,12 +263,12 @@ header .mainTitle h1 {
   text-shadow: #2c2c2c 0 0 4px;
 }
 header .mainTitle h1::before {
-  border-top: #FFB01F 2px solid;
+  border-top: #39FF14 2px solid;
 }
 header .mainTitle p {
   font-family: "Permanent Marker", cursive;
   font-size: 4rem;
-  color: #FFB01F;
+  color: #39FF14;
   margin: 0;
   padding: 0 58px 0 0;
   margin-top: -24px;
@@ -281,7 +283,7 @@ nav ul {
 }
 nav ul li a {
   text-decoration: none;
-  color: #FFB01F;
+  color: #39FF14;
   padding: 0 8px;
 }
 
@@ -300,7 +302,7 @@ nav ul li a {
   color: #2c2c2c;
   font-size: 0.5px;
   transition: 0.5s;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Orbitron", sans-serif;
   text-shadow: #2c2c2c 0 0 6px;
 }
 
@@ -313,7 +315,7 @@ nav ul li a {
   top: -16px;
 }
 .navItems.show li.one a {
-  color: #FFB01F;
+  color: #39FF14;
   font-size: 30px;
   transition: 0.8s;
 }
@@ -323,7 +325,7 @@ nav ul li a {
   top: -16px;
 }
 .navItems.show li.two a {
-  color: #FFB01F;
+  color: #39FF14;
   font-size: 30px;
   transition: 0.8s;
 }
@@ -333,7 +335,7 @@ nav ul li a {
   top: -16px;
 }
 .navItems.show li.three a {
-  color: #FFB01F;
+  color: #39FF14;
   font-size: 30px;
   transition: 0.8s;
 }
@@ -344,12 +346,11 @@ nav ul li a {
   justify-content: space-between;
   align-items: center;
   padding: 0 52px;
-  background: #6460604a;
 }
 .navBar h2 {
   font-size: 36px;
-  font-family: "Permanent Marker", cursive;
-  color: #FFB01F;
+  font-family: "Orbitron", sans-serif;
+  color: #39FF14;
   text-shadow: 2px 2px #00000040;
   margin: 10px 0;
 }
@@ -368,7 +369,7 @@ nav ul li a {
 .menuButtonBurger {
   width: 28px;
   height: 6px;
-  background: #FFB01F;
+  background: #39FF14;
   border-radius: 5px;
   box-shadow: 0 2px 5px #2c2c2c;
   transition: all 0.5s ease-in-out;
@@ -380,7 +381,7 @@ nav ul li a {
   position: absolute;
   width: 28px;
   height: 6px;
-  background: #FFB01F;
+  background: #39FF14;
   border-radius: 5px;
   box-shadow: 0 2px 5px #2c2c2c;
   transition: all 0.5s ease-in-out;
@@ -408,14 +409,11 @@ nav ul li a {
   transform: rotate(-45deg) translate(35px, 35px);
 }
 
-header .wrapper {
-  background-image: url(./Assets/deadPlane.jpg);
-  background-repeat: no-repeat center center fixed;
+header {
+  background-image: url(./Assets/portfoliohead.png);
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 body {
@@ -425,7 +423,7 @@ body {
 .about {
   display: flex;
   background: #161712;
-  padding: 0 0 70px 0px;
+  padding: 120px 0 70px 0px;
 }
 .about .aboutText {
   display: flex;
@@ -434,8 +432,8 @@ body {
   justify-content: center;
 }
 .about .aboutText h3 {
-  font-family: "Permanent Marker", cursive;
-  color: #FFB01F;
+  font-family: "Orbitron", sans-serif;
+  color: #39FF14;
   font-size: 40px;
   margin: 0;
 }
@@ -456,7 +454,7 @@ body {
   display: flex;
 }
 .about .aboutPic img {
-  box-shadow: #FFB01F 0 18px;
+  box-shadow: #39FF14 0 18px;
   flex-direction: column;
   align-items: center;
   border-top-left-radius: 25px;
@@ -496,7 +494,7 @@ body {
 }
 .projects .projectContainer h4 a {
   text-decoration: none;
-  color: #FFB01F;
+  color: #39FF14;
 }
 .projects .projectContainer img {
   border-radius: 4%;
@@ -514,8 +512,8 @@ body {
   padding: 18px 50px;
 }
 .projects h3 {
-  font-family: "Permanent Marker", cursive;
-  color: #FFB01F;
+  font-family: "Orbitron", sans-serif;
+  color: #39FF14;
   font-size: 40px;
 }
 .projects h3 .fas {
@@ -528,8 +526,8 @@ body {
 }
 
 .skillHead h3 {
-  font-family: "Permanent Marker", cursive;
-  color: #FFB01F;
+  font-family: "Orbitron", sans-serif;
+  color: #39FF14;
   font-size: 40px;
 }
 .skillHead h3 .fas {
@@ -555,10 +553,10 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .skillBox .icon:hover {
-  border: 3px #FFB01F solid;
+  border: 3px #39FF14 solid;
 }
 .skillBox .icon i {
-  color: #FFB01F;
+  color: #39FF14;
   font-size: 80px;
 }
 
@@ -575,7 +573,7 @@ div.icon.iconOdd i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Orbitron", sans-serif;
 }
 .form form input {
   margin-bottom: 18px;
@@ -651,7 +649,7 @@ input#submit:hover {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
-    box-shadow: #FFB01F 0 18px;
+    box-shadow: #39FF14 0 18px;
   }
 
   .projects .projectContainer div {
@@ -667,7 +665,7 @@ input#submit:hover {
     top: 160px;
   }
   .navItems.show li.one a {
-    color: #FFB01F;
+    color: #39FF14;
     font-size: 30px;
     transition: 0.8s;
   }
@@ -677,7 +675,7 @@ input#submit:hover {
     top: 106px;
   }
   .navItems.show li.two a {
-    color: #FFB01F;
+    color: #39FF14;
     font-size: 30px;
     transition: 0.8s;
   }
@@ -687,7 +685,7 @@ input#submit:hover {
     top: 52px;
   }
   .navItems.show li.three a {
-    color: #FFB01F;
+    color: #39FF14;
     font-size: 30px;
     transition: 0.8s;
   }
@@ -700,7 +698,7 @@ input#submit:hover {
     max-width: none;
   }
   .projects .projectContainer div:hover {
-    border: #FFB01F solid 2px;
+    border: #39FF14 solid 2px;
     transform: none;
   }
 
