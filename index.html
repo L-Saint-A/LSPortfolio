@@ -112,15 +112,16 @@
         </section>
         <section id="form" class="form">
             <div class="wrapper">
-                <form>
+                <form 
+                    name="contact"
+                    method="POST" 
+                    data-netlify="true">
                     <div>
-                        <input type="text" name="fName" id="fName" placeholder="first name">
-                        <input type="text" name="lName" id="lName" placeholder="last name">
-
+                        <input type="text" name="name" id="fName" placeholder="first name">
                     </div>
                     <input type="email" name="email" id="email" placeholder="email">
                     <textarea name="textArea" id="textArea" cols="80" rows="10" placeholder="what's on your mind?"></textarea>
-                    <input type="submit" value="submit" id="submit">
+                    <button type="submit" value="submit" id="submit"></button>
                 </form>
                 <div id="status" class="status">
                     <p>Message Sent!</p>
