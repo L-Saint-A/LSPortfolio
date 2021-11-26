@@ -576,16 +576,16 @@ div.icon.iconOdd i {
   font-family: "Orbitron", sans-serif;
 }
 .form form input {
+  width: 50%;
   margin-bottom: 18px;
   background-color: #161712;
   color: #E8E6E6;
-  border: 2px #E8E6E6 solid;
+  border: 3px #E8E6E6 solid;
   border-radius: 25px;
   padding: 4px 4px 4px 22px;
   letter-spacing: 1.25px;
 }
 .form form input#email {
-  width: 40%;
   margin-bottom: 32px;
   color: #E8E6E6;
 }
@@ -593,11 +593,21 @@ div.icon.iconOdd i {
   width: 60%;
   resize: none;
   background-color: #161712;
-  border: 2px #E8E6E6 solid;
+  border: 3px #E8E6E6 solid;
   border-radius: 25px;
   letter-spacing: 1.25px;
   padding: 10px 0 0 24px;
   color: #E8E6E6;
+}
+
+.nameAndEmail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+.nameAndEmail input {
+  width: 100%;
 }
 
 input#submit {
@@ -607,6 +617,26 @@ input#submit {
 }
 input#submit:hover {
   cursor: pointer;
+}
+
+button {
+  display: inline-block;
+  padding: 4px 18px;
+  margin: 22px 0 0 0;
+  border: 3px solid #E8E6E6;
+  border-radius: 25px;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: #161712;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #E8E6E6;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: #2c2c2c;
 }
 
 .contact {

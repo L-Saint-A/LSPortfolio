@@ -114,19 +114,16 @@
             <div class="wrapper">
                 <form 
                     name="contact"
-                    action="https.//formsubmit.com/l.saint.andre@hotmail.com"
                     method="POST" 
                     data-netlify="true">
-                    <div>
-                        <input type="text" name="name" id="fName" placeholder="first name">
+                    <div class="nameAndEmail">
+                        <input type="text" name="name" id="fName" placeholder="name">
+                        <input type="email" name="email" id="email" placeholder="email">
                     </div>
-                    <input type="email" name="email" id="email" placeholder="email">
+
                     <textarea name="textArea" id="textArea" cols="80" rows="10" placeholder="what's on your mind?"></textarea>
-                    <button type="submit" value="submit" id="submit"></button>
+                    <button type="submit" value="submit" id="submit">submit</button>
                 </form>
-                <div id="status" class="status">
-                    <p>Message Sent!</p>
-                </div>
             </div>
         </section>
         <section id="contact" class="contact wrapper">
@@ -141,7 +138,9 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Built with pride by Me, please reach out!</p>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>

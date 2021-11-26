@@ -358,16 +358,16 @@ div.icon.iconOdd i {
         justify-content: center;
         font-family: $secondFont;
         input{
+            width: 50%;
             margin-bottom: 18px;
             background-color: $firstColor;
             color: $thirdColor;
-            border: 2px $thirdColor solid;
+            border: 3px $thirdColor solid;
             border-radius: 25px;
             padding: 4px 4px 4px 22px;
             letter-spacing: 1.25px;
         }
         input#email {
-            width: 40%;
             margin-bottom: 32px;
             color: $thirdColor;
         }
@@ -375,12 +375,21 @@ div.icon.iconOdd i {
             width: 60%;
             resize: none;
             background-color: $firstColor;
-            border: 2px $thirdColor solid;
+            border: 3px $thirdColor solid;
             border-radius: 25px;
             letter-spacing: 1.25px;
             padding: 10px 0 0 24px;
             color: $thirdColor;
         }
+    }
+}
+.nameAndEmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    input {
+        width: 100%;
     }
 }
 input#submit {
@@ -391,6 +400,24 @@ input#submit {
         cursor: pointer;
     }
 }
+button{
+    display:inline-block;
+    padding: 4px 18px;
+    margin: 22px 0 0 0;
+    border: 3px solid $thirdColor;
+    border-radius:25px;
+    box-sizing: border-box;
+    text-decoration:none;
+    background: $firstColor;
+    font-family: $firstFont;
+    font-weight:300;
+    color:$thirdColor;
+    text-align: center;
+    transition: all 0.2s;
+    }
+    button:hover {
+        background: $fourthColor;
+    }
 .contact {
     padding: 48px 0 24px 0;
     display: flex;
