@@ -2,12 +2,12 @@
 
 
 $firstColor:#161712;
-$secondColor:#39FF14;
+$secondColor:#3d32ce;
 $thirdColor:#E8E6E6;
 $fourthColor:#2c2c2c;
 
 $firstFont: 'Roboto Slab', serif;
-$secondFont: 'Orbitron', sans-serif;
+$secondFont: 'Special Elite', cursive;
 $thirdFont: 'Open Sans', sans-serif;
 
 .wrapper {
@@ -20,37 +20,26 @@ header {
     height: 830px !important ;
     border-bottom: $secondColor 10px solid;
     padding-bottom: 40px;
-    .wrapper {
-        box-shadow: $secondColor 0 18px;
+}
+.heroText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 560px;
+    h1 {
+        font-family: $firstFont;
+        color: $fourthColor;
+        margin: 0;
+        padding: 0;
+        font-size: 6rem;
     }
-    .headText {
-        display: flex;
-        flex-direction: column;
-        text-align: right;
-    }
-    .mainTitle {
-        display: flex;
-        flex-direction: column-reverse;
-        height: 80%;
-        padding-right: 82px;
-        h1 {
-            font-family: 'Roboto Slab', serif;
-            color: $thirdColor;
-            font-size: 6rem;
-            margin: 0;
-            text-shadow: $fourthColor 0 0 4px;
-            &::before{
-                border-top: $secondColor 2px solid;
-            }
-        }
-        p {
-            font-family: 'Permanent Marker', cursive;
-            font-size: 4rem;
-            color: $secondColor;
-            margin: 0;
-            padding: 0 58px 0 0;
-            margin-top: -24px;
-        }
+    p {
+        font-size: 4rem;
+        color: $fourthColor;
+        font-family: $secondFont;
+        margin: 0;
+        padding: 0;
     }
 }
 nav {
@@ -120,15 +109,13 @@ nav {
 
 .navBar {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 52px;
     h2 {
-        font-size: 36px;
+        font-size: 56px;
         font-family: $secondFont;
         color: $secondColor;
-        text-shadow: 2px 2px #00000040;
+        font-weight: bold;
         margin: 10px 0;
     }
 }
@@ -187,7 +174,7 @@ nav {
 }
 
 header {
-    background-image: url(./Assets/portfoliohead.png);
+    background-image: url(./Assets/hero1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -244,6 +231,7 @@ body {
 .projects {
     display: flex;
     flex-direction: column;
+    background-color: #262323;
     .projectContainer {
         display: flex;
         justify-content: center;
@@ -396,6 +384,7 @@ input#submit {
     margin: 22px 0;
     padding: 4px 12px;
     font-size: 22px;
+    cursor: pointer;
     &:hover {
         cursor: pointer;
     }
@@ -414,6 +403,7 @@ button{
     color:$thirdColor;
     text-align: center;
     transition: all 0.2s;
+    cursor: pointer;
     }
     button:hover {
         background: $fourthColor;
