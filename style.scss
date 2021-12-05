@@ -520,11 +520,11 @@ footer {
     }
     .form {
         form {
-            input#email {
-                width: 60%;
+            input#email, input#fName {
+                width: 70%;
             }
             textArea {
-                width: 80%;
+                width: 78%;
             }
         }
     }
@@ -574,12 +574,21 @@ footer {
     .navBar {
         padding: 0 24px;
     }
+    .form {
+        form {
+            input#email, input#fName {
+                width: 90%;
+            }
+            textArea {
+                width: 90%;
+            }
+        }
+    }
 }
 
 @media (max-width: 560px) {
 
-    header .mainTitle {
-        margin-top: 42%;
+    .heroText {
         justify-content: center;
         padding-right: 22px;
         h1 {
@@ -597,11 +606,13 @@ footer {
             display: flex;
             flex-direction: column;
             align-items: center;
-            input#email {
-                width: 70%;
+        }
+        form {
+            input#email, input#fName {
+                width: 110%;
             }
             textArea {
-                width: 90%;
+                width: 100%;
             }
         }
     }
@@ -609,8 +620,8 @@ footer {
 
 @media (max-width: 460px) {
 
-    header .mainTitle {
-        margin-top: calc(70% - 100px);
+    .heroText {
+        margin-top: calc(70% - 242px);
         h1 {
         font-size: 2.2rem;
         }

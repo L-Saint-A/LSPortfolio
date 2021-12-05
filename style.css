@@ -742,11 +742,11 @@ footer p {
     padding: 10px 0;
   }
 
-  .form form input#email {
-    width: 60%;
+  .form form input#email, .form form input#fName {
+    width: 70%;
   }
   .form form textArea {
-    width: 80%;
+    width: 78%;
   }
 }
 @media (max-width: 768px) {
@@ -789,18 +789,24 @@ footer p {
   .navBar {
     padding: 0 24px;
   }
+
+  .form form input#email, .form form input#fName {
+    width: 90%;
+  }
+  .form form textArea {
+    width: 90%;
+  }
 }
 @media (max-width: 560px) {
-  header .mainTitle {
-    margin-top: 42%;
+  .heroText {
     justify-content: center;
     padding-right: 22px;
   }
-  header .mainTitle h1 {
+  .heroText h1 {
     font-size: 2rem;
     padding-bottom: 0;
   }
-  header .mainTitle p {
+  .heroText p {
     font-size: 2.2rem;
     margin: 0;
     padding: 0;
@@ -811,21 +817,21 @@ footer p {
     flex-direction: column;
     align-items: center;
   }
-  .form form div input#email {
-    width: 70%;
+  .form form input#email, .form form input#fName {
+    width: 110%;
   }
-  .form form div textArea {
-    width: 90%;
+  .form form textArea {
+    width: 100%;
   }
 }
 @media (max-width: 460px) {
-  header .mainTitle {
-    margin-top: calc(70% - 100px);
+  .heroText {
+    margin-top: calc(70% - 242px);
   }
-  header .mainTitle h1 {
+  .heroText h1 {
     font-size: 2.2rem;
   }
-  header .mainTitle p {
+  .heroText p {
     font-size: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
