@@ -293,7 +293,7 @@ nav ul li a {
   font-size: 0.5px;
   transition: 0.5s;
   font-family: "Special Elite", cursive;
-  text-shadow: #2c2c2c 0 0 6px;
+  font-weight: bold;
 }
 
 .navItems.show {
@@ -359,7 +359,6 @@ nav ul li a {
   height: 6px;
   background: #3d32ce;
   border-radius: 5px;
-  box-shadow: 0 2px 5px #2c2c2c;
   transition: all 0.5s ease-in-out;
 }
 
@@ -371,7 +370,6 @@ nav ul li a {
   height: 6px;
   background: #3d32ce;
   border-radius: 5px;
-  box-shadow: 0 2px 5px #2c2c2c;
   transition: all 0.5s ease-in-out;
 }
 
@@ -455,7 +453,7 @@ body {
 .projects {
   display: flex;
   flex-direction: column;
-  background-color: #262323;
+  background-color: #222;
 }
 .projects .projectContainer {
   display: flex;
@@ -631,7 +629,7 @@ button:hover {
 }
 
 .contact {
-  padding: 48px 0 24px 0;
+  padding: 48px 0 72px 0;
   display: flex;
   justify-content: space-around;
 }
@@ -651,6 +649,18 @@ button:hover {
   color: #E8E6E6;
   font-size: 40px;
   padding: 0 18px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+}
+footer p {
+  font-family: "Open Sans", sans-serif;
+  color: #E8E6E6;
+  font-weight: bold;
+  letter-spacing: 1.15px;
 }
 
 @media (max-width: 992px) {
