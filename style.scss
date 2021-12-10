@@ -6,9 +6,9 @@ $secondColor:#3d32ce;
 $thirdColor:#E8E6E6;
 $fourthColor:#2c2c2c;
 
-$firstFont: 'Roboto Slab', serif;
-$secondFont: 'Special Elite', cursive;
-$thirdFont: 'Open Sans', sans-serif;
+$firstFont: 'Lato', sans-serif;
+$secondFont: 'Montserrat', sans-serif;
+$thirdFont: 'Lora', serif;
 
 .wrapper {
     max-width: 1200px;
@@ -17,31 +17,39 @@ $thirdFont: 'Open Sans', sans-serif;
 }
 
 header {
-    height: 830px !important ;
-    border-bottom: $secondColor 10px solid;
+    height: 830px;
     padding-bottom: 40px;
+}
+.heroContainer {
+    display: flex;
+    width: 100;
+    justify-content: center;
+    padding-top: 120px;
 }
 .heroText {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 560px;
+    width: 958px;
+    height: 340px;
+    background-color: rgba(34, 34, 34, 0.500);
     h1 {
         font-family: $firstFont;
-        color: $fourthColor;
+        color: $thirdColor;
         margin: 0;
         padding: 0;
         font-size: 6rem;
     }
     p {
         font-size: 4rem;
-        color: $fourthColor;
+        color: $thirdColor;
         font-family: $secondFont;
         margin: 0;
         padding: 0;
     }
 }
+
 nav {
     display: flex;
     ul {
@@ -187,7 +195,7 @@ body {
 .about {
     display: flex;
     background: $firstColor;
-    padding: 120px 0 70px 0px;
+    padding: 120px 0 120px 0px;
     .aboutText {
         display: flex;
         flex-direction: column;
