@@ -2,7 +2,7 @@
 
 
 $firstColor:#161712;
-$secondColor:#3d32ce;
+$secondColor:#0047AB;
 $thirdColor:#E8E6E6;
 $fourthColor:#2c2c2c;
 
@@ -224,7 +224,7 @@ body {
     .aboutPic {
         display: flex;
         img {
-            box-shadow: $secondColor 0 18px;
+            box-shadow: $thirdColor 0 6px;
             flex-direction: column;
             align-items: center;
             border-top-left-radius: 25px;
