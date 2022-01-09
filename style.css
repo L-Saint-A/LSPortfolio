@@ -267,7 +267,7 @@ header {
 .heroText p {
   font-size: 4rem;
   color: #E8E6E6;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -300,7 +300,7 @@ nav ul li a {
   color: #2c2c2c;
   font-size: 0.5px;
   transition: 0.5s;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
 
@@ -426,7 +426,7 @@ body {
   justify-content: center;
 }
 .about .aboutText h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #0047AB;
   font-size: 40px;
   margin: 0;
@@ -436,7 +436,7 @@ body {
   padding: 0 14px;
 }
 .about .aboutText p {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   color: #E8E6E6;
   font-size: 20px;
   letter-spacing: 1.2px;
@@ -499,7 +499,7 @@ body {
   max-width: 190px;
 }
 .projects .projectContainer p {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   color: #E8E6E6;
   font-size: 20px;
   letter-spacing: 1.2px;
@@ -507,7 +507,7 @@ body {
   padding: 18px 50px;
 }
 .projects h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #0047AB;
   font-size: 40px;
 }
@@ -521,7 +521,7 @@ body {
 }
 
 .skillHead h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #0047AB;
   font-size: 40px;
 }
@@ -568,7 +568,7 @@ div.icon.iconOdd i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .form form input {
   width: 50%;
@@ -665,7 +665,7 @@ footer {
   background-color: #222;
 }
 footer p {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   color: #E8E6E6;
   font-weight: bold;
   letter-spacing: 1.15px;
