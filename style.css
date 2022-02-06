@@ -12,7 +12,7 @@ PROGENITOR PROPERTIES
 */
 .wrapper {
   max-width: 1200px;
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 a, a:visited, a:hover, a:active {
@@ -23,11 +23,6 @@ a, a:visited, a:hover, a:active {
 TOP MATTER
 AND NAVIGATION
 */
-
-header {
-  height: 830px;
-  padding-bottom: 40px;
-}
 
 .heroContainer {
   display: flex;
@@ -80,11 +75,13 @@ nav ul li a {
   top: -8px;
   margin: 0;
   padding: 0;
+  background-color: #000;
 }
 .navItems li a {
   font-size: 0.5px;
   transition: 0.5s;
   font-family: "Open Sans", sans-serif;
+  color: #E8E6E6;
   font-weight: bold;
 }
 .navItems.show {
@@ -102,7 +99,7 @@ nav ul li a {
 .navItems.show li.two {
   transition: 0.8s;
   left: -248px;
-  top: -16px;
+  top: 56px;
 }
 .navItems.show li.two a {
   font-size: 30px;
@@ -111,7 +108,7 @@ nav ul li a {
 .navItems.show li.three {
   transition: 0.8s;
   left: -82px;
-  top: -16px;
+  top: 124px;
 }
 .navItems.show li.three a {
   font-size: 30px;
@@ -152,7 +149,7 @@ nav{
   width: 50px;
   height: 50px;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
   align-self: center;
 }
 .menuButtonBurger {
@@ -160,7 +157,7 @@ nav{
   width: 28px;
   height: 6px;
   border-radius: 5px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .menuButtonBurger::before,
 .menuButtonBurger::after {
@@ -170,7 +167,7 @@ nav{
   height: 6px;
   background-color: #E8E6E6;
   border-radius: 5px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .menuButtonBurger::before {
   transform: translateY(-12px);
@@ -245,60 +242,58 @@ PROJECTS
 SECTION
 */
 
-
-.projects {
-  display: flex;
-  flex-direction: column;
+.singleProj {
+  background-image:
+    linear-gradient(
+      to left, 
+      #000,
+      #000 15%,
+      #000 15%,
+      #000 90%,
+      transparent 90%
+    );
+    padding: 18px 0;
+    padding-left: 5%;
 }
-.projects .projectContainer {
+.singleProj2 {
+  background-image:
+    linear-gradient(
+      to right, 
+      #000,
+      #000 15%,
+      #000 15%,
+      #000 90%,
+      transparent 90%
+    );
+    padding: 18px 0;
+    padding-left: 5%;
+}
+.oneProj {
+  display: flex;
+  color: #E8E6E6;
+  display: flex;
+}
+.oneProj a {
   display: flex;
   justify-content: center;
-}
-.projects .projectContainer div {
-  max-width: 390px;
-  min-width: 390px;
-  display: inline-block;
-  transform: perspective(1px) translateZ(0);
-  transition-duration: 0.3s;
-  transition-property: transform;
-  transition-timing-function: ease-out;
-  text-align: center;
-}
-.projects .projectContainer div:hover {
-  transform: translateY(-10px);
-  border-radius: 4%;
-}
-.projects .projectContainer h4 {
-  text-decoration: none;
-  color: #000;
-  font-size: 34px;
-  text-align: center;
-  padding: 0 12px;
-}
-.projects .projectContainer h4 a {
+  align-items: center;
+  font-size: 80px;
   text-decoration: none;
 }
-.projects .projectContainer img {
-  border-radius: 4%;
-  min-height: 140px;
-  max-height: 140px;
-  min-width: 190px;
-  max-width: 190px;
-}
-.projects .projectContainer p {
-  font-size: 20px;
-  letter-spacing: 1.2px;
-  font-weight: bold;
-  padding: 18px 50px;
-}
-.projects h3 {
-  font-size: 40px;
-}
-.projects h3 .fas {
-  padding: 0 12px;
+
+.projText {
+  display: flex;
 }
 
-
+.projText h4 {
+  font-family: sans-serif;
+}
+.projText p {
+  font-family: sans-serif;
+  font-size: 22px;
+  padding: 0 40px;
+  text-align: center;
+}
 
 /*
 SKILLS
