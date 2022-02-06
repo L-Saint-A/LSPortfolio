@@ -156,7 +156,6 @@ nav{
   background-color: #E8E6E6;
   width: 28px;
   height: 6px;
-  border-radius: 5px;
   transition: all 0.4s ease-in-out;
 }
 .menuButtonBurger::before,
@@ -166,7 +165,6 @@ nav{
   width: 28px;
   height: 6px;
   background-color: #E8E6E6;
-  border-radius: 5px;
   transition: all 0.4s ease-in-out;
 }
 .menuButtonBurger::before {
@@ -254,6 +252,7 @@ SECTION
     );
     padding: 18px 0;
     padding-left: 5%;
+    margin-bottom: 24px;
 }
 .singleProj2 {
   background-image:
@@ -267,6 +266,7 @@ SECTION
     );
     padding: 18px 0;
     padding-left: 5%;
+    margin-bottom: 24px;
 }
 .oneProj {
   display: flex;
@@ -293,6 +293,7 @@ SECTION
   font-size: 22px;
   padding: 0 40px;
   text-align: center;
+  letter-spacing: 1.1px;
 }
 
 /*
