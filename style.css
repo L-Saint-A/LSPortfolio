@@ -485,90 +485,17 @@ footer p {
   letter-spacing: 1.15px;
 }
 
+/* 
+BREAKPOINT
+*/
+
+
 @media (max-width: 992px) {
-  header .mainTitle h1 {
-    font-size: 5rem;
+  .navBar H2 {
+    padding-right: 48px;
   }
-  header .mainTitle p {
-    font-size: 3rem;
-  }
-
-  .about .aboutPic {
-    align-items: center;
-  }
-  .about .aboutPic img {
-    width: 268px;
-    height: 268px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
-    box-shadow: #0047AB 0 18px;
-  }
-
-  .projects .projectContainer div {
-    min-width: 324px;
-  }
-
-  .navItems.show {
-    position: relative;
-  }
-  .navItems.show li.one {
-    transition: 0.8s;
-    left: 0px;
-    top: 160px;
-  }
-  .navItems.show li.one a {
-    color: #0047AB;
-    font-size: 30px;
-    transition: 0.8s;
-  }
-  .navItems.show li.two {
-    transition: 0.8s;
-    left: -36px;
-    top: 106px;
-  }
-  .navItems.show li.two a {
-    color: #0047AB;
-    font-size: 30px;
-    transition: 0.8s;
-  }
-  .navItems.show li.three {
-    transition: 0.8s;
-    left: 0px;
-    top: 52px;
-  }
-  .navItems.show li.three a {
-    color: #0047AB;
-    font-size: 30px;
-    transition: 0.8s;
-  }
-
-  .projects .projectContainer {
-    display: flex;
-    flex-direction: column;
-  }
-  .projects .projectContainer div {
-    max-width: none;
-  }
-  .projects .projectContainer div:hover {
-    border: #0047AB solid 2px;
-    transform: none;
-  }
-
-  .contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .contact a {
-    padding: 10px 0;
-  }
-
-  .form form input#email, .form form input#fName {
-    width: 70%;
-  }
-  .form form textArea {
-    width: 78%;
+  .fa-utensils {
+    padding-right: 44px;
   }
 }
 @media (max-width: 768px) {
