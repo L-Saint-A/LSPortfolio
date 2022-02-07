@@ -42,7 +42,7 @@ HEADER TEXT
   padding: 0;
   font-size: 5rem;
   font-family: 'Rubik Mono One', sans-serif;
-  padding: 12px 18px;
+  padding: 16px 44px;
 }
 .heroText p {
   font-size: 4.2rem;
@@ -191,8 +191,6 @@ nav{
 .menuButton.open .menuButtonBurger::after {
   transform: rotate(-45deg) translate(35px, 35px);
 }
-
-
 
 /*
 ABOUT SECTION
