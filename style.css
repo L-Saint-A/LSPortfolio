@@ -37,7 +37,7 @@ HEADER TEXT
 }
 .heroText h1 {
   font-family: sans-serif;
-  color: #E8E6E6;
+  color: #fff;
   margin: 0;
   padding: 0;
   font-size: 5rem;
@@ -46,7 +46,7 @@ HEADER TEXT
 }
 .heroText p {
   font-size: 4.2rem;
-  color: #E8E6E6;
+  color: #fff;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 4px 0 20px 0;
@@ -86,7 +86,7 @@ nav ul li a {
   font-size: 0.5px;
   transition: 0.5s;
   font-family: "Open Sans", sans-serif;
-  color: #E8E6E6;
+  color: #fff;
   font-weight: bold;
 }
 .navItems.show {
@@ -133,7 +133,7 @@ nav ul li a {
   background-color: #000;
   width: 20%;
   height: 60px;
-  color: #E8E6E6;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +158,7 @@ nav{
   align-self: center;
 }
 .menuButtonBurger {
-  background-color: #E8E6E6;
+  background-color: #fff;
   width: 28px;
   height: 6px;
   transition: all 0.4s ease-in-out;
@@ -169,7 +169,7 @@ nav{
   position: absolute;
   width: 28px;
   height: 6px;
-  background-color: #E8E6E6;
+  background-color: #fff;
   transition: all 0.4s ease-in-out;
 }
 .menuButtonBurger::before {
@@ -246,7 +246,7 @@ SECTION
   margin: 0;
   padding: 20px 0;
   margin: 30px 0; 
-  color: #E8E6E6;
+  color: #fff;
   background-color: #000;
 }
 .projects {
@@ -295,7 +295,7 @@ SECTION
 
 .oneProj {
   display: flex;
-  color: #E8E6E6;
+  color: #fff;
   display: flex;
 }
 .oneProj a {
@@ -343,19 +343,19 @@ SECTION
   justify-content: center;
   align-items: center;
   background: #000;
-  padding: 14px 12px 8px 12px;
-  height: 160px;
-  width: 106px;
+  padding: 18px 12px 8px 12px;
+  height: 180px;
+  width: 120px;
 }
 .skillBox .icon i {
-  color: #E8E6E6;
+  color: #fff;
   font-size: 80px;
 }
 div.icon.iconOdd i {
   font-size: 66px;
 }
 .icon p {
-  color: #E8E6E6;
+  color: #fff;
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 1.2rem;
 }
@@ -394,7 +394,7 @@ SECTION
   color: #000;
   padding: 4px 4px 4px 22px;
   letter-spacing: 1.25px;
-  background-color: #E8E6E6;
+  background-color: #fff;
   border-style: none;
 }
 .form form input#email {
@@ -407,7 +407,7 @@ SECTION
   letter-spacing: 1.25px;
   padding: 10px 0 0 24px;
   color: #000;
-  background-color: #E8E6E6;
+  background-color: #fff;
   border-style: none;
 }
 .nameAndEmail {
@@ -419,7 +419,7 @@ SECTION
 }
 .nameAndEmail input {
   width: 100%;
-  background-color: #E8E6E6;
+  background-color: #fff;
 }
 input#submit {
   margin: 22px 0;
@@ -427,13 +427,13 @@ input#submit {
   font-size: 22px;
   cursor: pointer;
   border-radius: 0;
-  background-color: #E8E6E6;
+  background-color: #fff;
 }
 input#submit:hover {
   cursor: pointer;
 }
 button {
-  background-color: #E8E6E6;
+  background-color: #fff;
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -445,14 +445,24 @@ button {
   margin: 18px 0;
 }
 .contact {
-  padding: 48px 0 72px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+    background-image:
+  linear-gradient(
+    to left, 
+    #000,
+    #000 15%,
+    #000 15%,
+    #000 90%,
+    transparent 90%
+  );
+  margin-bottom: 22px;
 }
 .contact div {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 16px 0;
 }
 .contact div a {
   text-decoration: none;
@@ -461,18 +471,18 @@ button {
   align-items: center;
 }
 .contact div a i {
-  font-size: 40px;
+  font-size: 4rem;
   padding: 0 18px;
+  color: #fff;
 }
-
 footer {
   display: flex;
   justify-content: center;
-  background-color: #222;
+  background-color: #000;
 }
 footer p {
   font-family: "Open Sans", sans-serif;
-  color: #E8E6E6;
+  color: #fff;
   font-weight: bold;
   letter-spacing: 1.15px;
 }
