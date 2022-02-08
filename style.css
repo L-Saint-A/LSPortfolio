@@ -318,15 +318,23 @@ SECTION
   letter-spacing: 1.1px;
 }
 
+i.fa-utensils {
+  padding-right: 74px;
+}
+
 /*
 SKILLS
 SECTION
 */
 
+.skills {
+  margin-top: 84px;
+}
 
 .skillHead h3 {
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 40px;
+  font-size: 3rem;
+  text-align: center;
 }
 .skillBox {
   display: grid;
@@ -441,6 +449,7 @@ button {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 1.2rem;
   margin: 18px 0;
+  cursor: pointer;
 }
 .contact {
   display: flex;
