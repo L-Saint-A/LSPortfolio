@@ -643,3 +643,26 @@ BREAKPOINTS
     left: 40px;
   }
 }
+@media (max-width: 360px) {
+
+  .heroText {
+    padding-right: 0;
+  }
+  .heroText h1 {
+    font-size: 2rem;
+  }
+  .navBar h2 {
+    padding: 12px;
+    font-size: 1.6rem;
+  }
+  .navItems {
+    margin-right: -33px;
+  }
+  .navItems li {
+    left: 10px;
+  }
+.projects i {
+  display: none;
+}
+
+}
