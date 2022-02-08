@@ -531,8 +531,17 @@ BREAKPOINTS
     width: 80vw;
     flex-wrap: wrap;
   }
-}
-@media (max-width: 768px) {
+  .formBG {
+    background-image:
+    linear-gradient(
+      to right, 
+      #000,
+      #000 15%,
+      #000 15%,
+      #000 90%,
+      transparent 90%
+    );
+  }
   header .mainTitle {
     margin-top: 35%;
     justify-content: center;
@@ -546,18 +555,22 @@ BREAKPOINTS
     margin: 0;
     padding: 0;
   }
-
   .navBar {
     padding: 0 24px;
   }
-
+  .formBG {
+    background-color: #000;
+  }
   .form form input#email, .form form input#fName {
     width: 90%;
   }
   .form form textArea {
-    width: 90%;
+    width: 80%;
   }
 }
+
+
+
 @media (max-width: 560px) {
   .heroText {
     justify-content: center;
