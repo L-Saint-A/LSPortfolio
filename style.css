@@ -637,5 +637,9 @@ BREAKPOINTS
   }
   .heroText p {
     font-size: 2rem;
+    padding-bottom: 26px;
   }
-}/*# sourceMappingURL=style.css.map */
+  .navItems li {
+    left: 40px;
+  }
+}
