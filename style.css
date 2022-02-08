@@ -664,5 +664,13 @@ BREAKPOINTS
 .projects i {
   display: none;
 }
-
+.projText div {
+  padding-right: 122px;
+}
+.form form textarea {
+  width: 95%;
+}
+.contact {
+  background-color: #000;
+}
 }
