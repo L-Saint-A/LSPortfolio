@@ -14,9 +14,6 @@ menuButton.addEventListener('click', ()=>{
     navUL.classList.toggle('show');
 });
 
-
-
-
 document.querySelector("form").addEventListener("submit", handleSubmit);
 
 const handleSubmit = (e) => {
