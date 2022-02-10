@@ -44,10 +44,27 @@ a, a:visited, a:hover, a:active {
 .backStyle3{
   border-left: 60vw solid transparent;
   border-right: 60vw solid transparent;
-  border-top: 220vh solid aqua;
+  border-top: 220vh solid #c10206;
   z-index: -4;
 }
-
+.backStyle4{
+  border-left: 60vw solid transparent;
+  border-right: 60vw solid transparent;
+  border-top: 60vh solid #dfe2db;
+  z-index: -4;
+}
+.backStyle5{
+  border-left: 90vw solid transparent;
+  border-right: 40vw solid transparent;
+  border-top: 180vh solid #211d21;
+  z-index: -5;
+}
+.backStyle6{
+  border-left: 20vw solid transparent;
+  border-right: 220vw solid transparent;
+  border-top: 240vh solid #dfe2db;
+  z-index: -6;
+}
 
 /*
 HEADER TEXT
@@ -244,6 +261,7 @@ ABOUT SECTION
 .about .aboutText h3 {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 3rem;
+  letter-spacing: 2px;
   margin: 0;
 }
 .about .aboutText p {
@@ -278,6 +296,7 @@ SECTION
 .projTitle h3 {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 3rem;
+  letter-spacing: 2px;
   margin: 0;
   padding: 20px 0;
   margin: 30px 0; 
