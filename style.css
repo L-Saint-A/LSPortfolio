@@ -17,6 +17,38 @@ a, a:visited, a:hover, a:active {
   color: inherit;
 }
 
+.backContainer {
+  position: relative;
+}
+
+.backStyle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.backStyle1 {
+  left: calc(50% - 25vw);
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-top: 80vh solid #fff;
+  z-index: -2;
+}
+
+.backStyle2{
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-top: 120vh solid #000;
+  z-index: -3;
+}
+.backStyle3{
+  background-color: aqua;
+  top: 60px;
+  width: 100px;
+  height: 100px;
+}
+
+
 /*
 HEADER TEXT
 */
@@ -218,7 +250,11 @@ ABOUT SECTION
   font-size: 1.6rem;
   letter-spacing: 1.2px;
   font-family: 'Open Sans', sans-serif;
-
+  border-bottom: 100px solid #333;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  background-color: #fff;
+  border: 12px solid #000;
 }
 .about .aboutPic {
   display: flex;
