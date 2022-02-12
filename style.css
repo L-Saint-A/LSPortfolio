@@ -73,17 +73,17 @@ a, a:visited, a:hover, a:active {
 .lowBackStyle1 {
   right: 0;
   position: absolute;
-  border-top: 500px solid transparent;
-  border-right: 1000px solid red;
-  border-bottom: 500px solid transparent;
+  border-top: 422px solid transparent;
+  border-right: 581px solid #fff;
+  border-bottom: 402px solid transparent;
   z-index: -1;
 }
 .lowBackStyle2 {
   right: 0;
-  top: -180px;
+  top: -58px;
   position: absolute;
   border-top: 415px solid transparent;
-  border-right: 1118px solid greenyellow;
+  border-right: 834px solid #000;
   border-bottom: 476px solid transparent;
   z-index: -2;
 
@@ -93,19 +93,29 @@ a, a:visited, a:hover, a:active {
   top: -200px;
   position: absolute;
   border-top: 364px solid transparent;
-  border-right: 1283px solid hotpink;
+  border-right: 1283px solid #dfe2db;
   border-bottom: 319px solid transparent;
   z-index: -3;
 }
 .lowBackStyle4 {
   right: 0;
-  top: -160px;
+  top: -106px;
   position: absolute;
   border-top: 384px solid transparent;
-  border-right: 1342px solid blue;
+  border-right: 1177px solid #c10206;
   border-bottom: 472px solid transparent;
   z-index: -4;
 }
+.lowBackStyle5 {
+  right: 0;
+  top: 11px;
+  position: absolute;
+  border-top: 384px solid transparent;
+  border-right: 1413px solid #211d21;
+  border-bottom: 472px solid transparent;
+  z-index: -5;
+}
+
 /*
 HEADER TEXT
 */
