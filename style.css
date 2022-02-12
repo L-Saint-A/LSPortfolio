@@ -20,7 +20,9 @@ a, a:visited, a:hover, a:active {
 .backContainer {
   position: relative;
 }
-
+.lowerBackContainer{
+  position: relative;
+}
 .backStyle {
   position: absolute;
   width: 100%;
@@ -64,6 +66,26 @@ a, a:visited, a:hover, a:active {
   border-right: 220vw solid transparent;
   border-top: 240vh solid #dfe2db;
   z-index: -6;
+}
+.lowBackStyle {
+  position: absolute;
+}
+.lowBackStyle1 {
+  right: 0;
+  position: absolute;
+  border-top: 500px solid transparent;
+  border-right: 1000px solid red;
+  border-bottom: 500px solid transparent;
+  z-index: -1;
+}
+.lowBackStyle2 {
+  right: 0;
+  top: -20vh;
+  position: absolute;
+  border-top: 364px solid transparent;
+  border-right: 1283px solid hotpink;
+  border-bottom: 319px solid transparent;
+  z-index: -2;
 }
 
 /*
