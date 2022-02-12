@@ -80,14 +80,32 @@ a, a:visited, a:hover, a:active {
 }
 .lowBackStyle2 {
   right: 0;
-  top: -20vh;
+  top: -180px;
+  position: absolute;
+  border-top: 415px solid transparent;
+  border-right: 1118px solid greenyellow;
+  border-bottom: 476px solid transparent;
+  z-index: -2;
+
+}
+.lowBackStyle3 {
+  right: 0;
+  top: -200px;
   position: absolute;
   border-top: 364px solid transparent;
   border-right: 1283px solid hotpink;
   border-bottom: 319px solid transparent;
-  z-index: -2;
+  z-index: -3;
 }
-
+.lowBackStyle4 {
+  right: 0;
+  top: -160px;
+  position: absolute;
+  border-top: 384px solid transparent;
+  border-right: 1342px solid blue;
+  border-bottom: 472px solid transparent;
+  z-index: -4;
+}
 /*
 HEADER TEXT
 */
