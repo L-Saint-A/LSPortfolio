@@ -146,7 +146,7 @@ HEADER TEXT
 .heroText p {
   font-size: 4.2rem;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Courier Prime', monospace;
   margin: 0;
   padding: 4px 0 20px 0;
   letter-spacing: 2.8px;
@@ -613,6 +613,9 @@ BREAKPOINTS
   .fa-utensils {
     padding-right: 44px;
   }
+  div.aboutText {
+    flex-direction: column;
+  }
 }
 
 
@@ -628,7 +631,10 @@ BREAKPOINTS
   .about .aboutPic img {
     display: none;
   }
-
+  .skillHead h3 {
+    background-color: #000;
+    color: #fff;
+  }
   .skillBox {
     display: flex;
     justify-content: center;
