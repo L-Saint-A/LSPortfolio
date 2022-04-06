@@ -23,6 +23,28 @@ a, a:visited, a:hover, a:active {
 .lowerBackContainer{
   position: relative;
 }
+body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #3feedf, #f858fd, #05a7e2, #10775f);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 /*
 HEADER TEXT
@@ -367,6 +389,7 @@ SECTION
   padding: 18px 12px 8px 12px;
   height: 180px;
   width: 120px;
+  border-radius: 25px 4px 25px 4px;
 }
 .skillBox .icon i {
   color: #fff;
@@ -379,6 +402,7 @@ div.icon.iconOdd i {
   color: #fff;
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 /* 
