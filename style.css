@@ -48,14 +48,6 @@ body {
 /*
 HEADER TEXT
 */
-
-.heroContainer {
-  display: flex;
-  width: 100;
-  justify-content: center;
-  padding-top: 120px;
-}
-
 .heroText {
   display: flex;
   flex-direction: column;
@@ -71,14 +63,29 @@ HEADER TEXT
   font-size: 5rem;
   font-family: 'Rubik Mono One', sans-serif;
   padding: 16px 44px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.815);
 }
 .heroText p {
   font-size: 4.2rem;
   color: #fff;
   font-family: 'Courier Prime', monospace;
   margin: 0;
-  padding: 4px 0 20px 0;
+  padding: 4px 38px 20px 38px;
   letter-spacing: 2.8px;
+  background-color: rgba(0, 0, 0, 0.815);
+}
+.heroContainer {
+  display: flex;
+}
+header {
+  background-image: url(./Assets/newBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 800px;
+  display: flex;
+  justify-content: center;
 }
 
 /* 
@@ -254,15 +261,7 @@ ABOUT SECTION
 .about .aboutPic {
   display: flex;
 }
-.about .aboutPic img {
-  flex-direction: column;
-  align-items: center;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  width: 300px;
-  height: 300px;
-  margin-right: 40px;
-}
+
 
 /*
 PROJECTS
