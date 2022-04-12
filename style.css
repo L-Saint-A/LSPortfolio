@@ -164,7 +164,7 @@ nav ul li a {
 }
 .navBar {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   position: fixed;
   width: 100%;
@@ -314,19 +314,26 @@ SECTION
 .skills {
   margin-top: 84px;
 }
-
+.skillHead {
+  background-color: #000;
+  padding: 30px 0 20px 0;
+}
 .skillHead h3 {
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 3.4rem;
-  letter-spacing: 6px;
+  font-size: 4rem;
   text-align: center;
+  color: #fff;
+}
+.skillHead p {
+  text-align: center;
+  padding: 0 128px;
+  margin: 0;
 }
 .skillBox {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #000;
 }
 .skillBox .icon {
   display: flex;
@@ -337,7 +344,6 @@ SECTION
   padding: 22px 12px 8px 12px;
   height: 180px;
   width: 120px;
-  border-radius: 25px 4px 25px 4px;
 }
 .skillBox .icon i {
   color: #fff;
@@ -358,29 +364,23 @@ div.icon.iconOdd i {
 FORM
 SECTION
 */
+.form h3 {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
 
+}
 .formBG {
-  background-image:
-  linear-gradient(
-    to right, 
-    #000,
-    #000 15%,
-    #000 15%,
-    #000 90%,
-    transparent 90%
-  );
+  background-color: #000;
+  padding: 22px 0;
 }
 
-.form {
-  margin: 90px 0 30px 0;
-  font-size: 1.2rem;
-}
 .form form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 .form form input {
   width: 45%;
@@ -433,41 +433,11 @@ button {
   display: inline-block;
   font-size: 16px;
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   margin: 18px 0;
   cursor: pointer;
 }
-.contact {
-  display: flex;
-  justify-content: space-evenly;
-    background-image:
-  linear-gradient(
-    to left, 
-    #000,
-    #000 15%,
-    #000 15%,
-    #000 90%,
-    transparent 90%
-  );
-  margin-bottom: 22px;
-}
-.contact div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 0;
-}
-.contact div a {
-  text-decoration: none;
-  font-family: "Lato", sans-serif;
-  display: flex;
-  align-items: center;
-}
-.contact div a i {
-  font-size: 4rem;
-  padding: 0 18px;
-  color: #fff;
-}
+
 footer {
   display: flex;
   justify-content: center;
@@ -481,181 +451,32 @@ footer p {
   line-height: 2rem;
   text-align: center;
 }
-
+.contactIcons {
+  display: flex;
+  justify-content: space-around;
+  padding: 22px 0;
+}
+.contactIcons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactIcons div a{
+  color: #fff;
+  font-size: 4rem;
+}
+.contactIcons div p{
+  margin: 0;
+  padding: 0;
+}
 /* 
 BREAKPOINTS
 */
 
-@media (max-width: 992px) {
-  .navBar H2 {
-    padding-right: 48px;
-  }
-  div.aboutText {
-    flex-direction: column;
-}
+@media (max-width: 1201) {
 
-
-@media (max-width: 768px) {
-  header .mainTitle h1 {
-    font-size: 4rem;
-    padding-bottom: 16px;
-  }
-  header .mainTitle p {
-    font-size: 3rem;
-  }
-
-  .about .aboutPic img {
-    display: none;
-  }
-  .skillHead h3 {
-    background-color: #000;
-    color: #fff;
-  }
-  .skillBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    width: 80vw;
-    flex-wrap: wrap;
-  }
-  .formBG {
-    background-image:
-    linear-gradient(
-      to right, 
-      #000,
-      #000 15%,
-      #000 15%,
-      #000 90%,
-      transparent 90%
-    );
-  }
-  header .mainTitle {
-    margin-top: 35%;
-    justify-content: center;
-  }
-  header .mainTitle h1 {
-    font-size: 40px;
-    padding-bottom: 16px;
-  }
-  header .mainTitle p {
-    font-size: 2.4rem;
-    margin: 0;
-    padding: 0;
-  }
-  .navBar {
-    padding: 0 24px;
-  }
-  .formBG {
-    background-color: #000;
-  }
-  .form form input#email, .form form input#fName {
-    width: 90%;
-  }
-  .form form textArea {
-    width: 80%;
-  }
-  .navItems.show li.one {
-    transition: 0.8s;
-    left: -150px;
-    top: -16px;
-  }
-  .navItems.show li.one a {
-    font-size: 30px;
-    transition: 0.8s;
-  }
-  .navItems.show li.two {
-    transition: 0.8s;
-    left: -108px;
-    top: 56px;
-  }
-  .navItems.show li.two a {
-    font-size: 30px;
-    transition: 0.8s;
-  }
-  .navItems.show li.three {
-    transition: 0.8s;
-    left: -32px;
-    top: 124px;
-  }
-  .navItems.show li.three a {
-    font-size: 30px;
-    transition: 0.8s;
-  }
 }
 
 
 
-@media (max-width: 660px) {
-  .heroText {
-    justify-content: center;
-    padding-right: 22px;
-  }
-  .heroText h1 {
-    font-size: 3rem;
-    padding-bottom: 0;
-  }
-  .heroText p {
-    font-size: 2.2rem;
-    margin: 0;
-    padding: 0;
-  }
-
-  .form form div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .form form input#email, .form form input#fName {
-    width: 110%;
-  }
-  .form form textArea {
-    width: 100%;
-  }
-}
-@media (max-width: 460px) {
-  .heroText {
-    margin-top: calc(70% - 242px);
-  }
-  .heroText h1 {
-    font-size: 2.2rem;
-  }
-  .heroText p {
-    font-size: 2rem;
-    padding-bottom: 26px;
-  }
-  .navItems li {
-    left: 40px;
-  }
-}
-@media (max-width: 360px) {
-
-  .heroText {
-    padding-right: 0;
-  }
-  .heroText h1 {
-    font-size: 2rem;
-  }
-  .navBar h2 {
-    padding: 12px;
-    font-size: 1.6rem;
-  }
-  .navItems {
-    margin-right: -33px;
-  }
-  .navItems li {
-    left: 10px;
-  }
-.projects i {
-  display: none;
-}
-.projText div {
-  padding-right: 122px;
-}
-.form form textarea {
-  width: 95%;
-}
-.contact {
-  background-color: #000;
-}
-}
