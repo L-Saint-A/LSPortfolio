@@ -34,7 +34,7 @@ p {
   line-height: 36px;
 }
 body {
-    background: linear-gradient(-45deg, #3fee79, #f858fd, #3fee79, #06d8e7);
+    background: linear-gradient(-45deg, #ff00dd, #17f7ff, #ff00dd, #17f7ff);
     background-size: 400% 400%;
     animation: gradient 8s ease infinite;
 }
@@ -398,6 +398,7 @@ SECTION
   margin-bottom: 32px;
 }
 .form form textArea {
+  width: 90%;
   resize: none;
   letter-spacing: 1.25px;
   padding: 10px 0 0 24px;
@@ -449,9 +450,8 @@ footer {
 footer p {
   font-family: "Open Sans", sans-serif;
   color: #fff;
-  font-weight: bold;
   letter-spacing: 1.15px;
-  line-height: 2rem;
+  line-height: 36px;
   text-align: center;
 }
 .contactIcons {
@@ -477,9 +477,48 @@ footer p {
 BREAKPOINTS
 */
 
-@media (max-width: 1201) {
-
+@media (max-width: 1024px) {
+  .about .aboutText p {
+    padding: 0 8px;
+  }
+  .skillHead p {
+    text-align: center;
+    padding: 0 48px;
+    margin: 0;
+  }
+  .form form input {
+    width: 85%;
+  }
 }
 
-
+@media (max-width: 599px) {
+  h4 {
+    text-align: center;
+  }
+  .form form input {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .menuButton {
+    padding: 0 22px 0 0;
+  }
+}
+@media (max-width: 400px) {
+  .navItems.show li.one {
+    transition: 0.8s;
+    left: -158px;
+    top: -16px;
+  }
+  .navItems.show li.two {
+    transition: 0.8s;
+    left: -172px;
+    top: 56px;
+  }
+  .navItems.show li.three {
+    transition: 0.8s;
+    left: -150px;
+    top: 124px;
+  }
+}
 
