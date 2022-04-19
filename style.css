@@ -62,7 +62,7 @@ HEADER TEXT
 }
 .heroText h1 {
   font-family: sans-serif;
-  color: #fff;
+  color: 	#FFFAFA;
   margin: 0;
   padding: 0;
   font-size: 4rem;
@@ -72,7 +72,7 @@ HEADER TEXT
 }
 .heroText p {
   font-size: 3rem;
-  color: #fff;
+  color: #FFFAFA;
   font-family: 'Courier Prime', monospace;
   margin: 0;
   padding: 4px 58px 20px 58px;
@@ -120,14 +120,14 @@ nav ul li a {
   top: -8px;
   margin: 0;
   padding: 0;
-  background-color: #000;
+  background-color: #111111;
   padding: 6px 8px;
 }
 .navItems li a {
   font-size: 0.5px;
   transition: 0.5s;
   font-family: "Open Sans", sans-serif;
-  color: #fff;
+  color:#FFFAFA;
   font-weight: bold;
   width: 100%;
   height: 100%;
@@ -171,11 +171,11 @@ nav ul li a {
   z-index: 999;
 }
 .navBar .navImage {
-  background-color: #000;
+  background-color: #111111;
   width: 20%;
   font-size: 33px;
   height: 60px;
-  color: #fff;
+  color:#FFFAFA;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,7 +186,7 @@ nav ul li a {
   padding: 6px 0;
 }
 nav{
-  background-color: #000;
+  background-color: #111111;
   width: 20%;
   height: 60px;
   align-content: center;
@@ -204,7 +204,7 @@ nav{
   align-self: center;
 }
 .menuButtonBurger {
-  background-color: #fff;
+  background-color: #FFFAFA;
   width: 28px;
   height: 6px;
   transition: all 0.4s ease-in-out;
@@ -215,7 +215,7 @@ nav{
   position: absolute;
   width: 28px;
   height: 6px;
-  background-color: #fff;
+  background-color: #FFFAFA;
   transition: all 0.4s ease-in-out;
 }
 .menuButtonBurger::before {
@@ -251,13 +251,13 @@ ABOUT SECTION
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #111111;
   padding: 22px;
 }
 .about .aboutText h3 {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 4rem;
-  color: #fff;
+  color: 	#FFFAFA;
 }
 .about .aboutText p {
   padding: 0 68px;
@@ -272,7 +272,7 @@ PROJECTS
 SECTION
 */
 .projectContainer {
-  background-color: #000;
+  background-color: #111111;
   padding: 40px 0;
 }
 .projTitle {
@@ -284,7 +284,7 @@ SECTION
   letter-spacing: 6px;
   padding: 20px 0;
   margin: 30px 0; 
-  color: #fff;
+  color: 	#FFFAFA;
 }
 .singleProj h4 a{
   font-family: 'Rubik Mono One', sans-serif;
@@ -292,7 +292,7 @@ SECTION
 }
 .oneProj {
   display: flex;
-  color: #fff;
+  color: 	#FFFAFA;
   display: flex;
 }
 .oneProj a {
@@ -315,14 +315,14 @@ SECTION
   margin: 122px auto;
 }
 .skillHead {
-  background-color: #000;
+  background-color: #111111;
   padding: 30px 0 20px 0;
 }
 .skillHead h3 {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 4rem;
   text-align: center;
-  color: #fff;
+  color: 	#FFFAFA;
 }
 .skillHead p {
   text-align: center;
@@ -334,7 +334,7 @@ SECTION
   flex-wrap: wrap;
   justify-content: center;
 
-  background-color: #000;
+  background-color: #111111;
   padding: 0 0 44px 0;
 }
 .skillBox .icon {
@@ -342,19 +342,19 @@ SECTION
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #000;
+  background: #111111;
   padding: 22px 12px 8px 12px;
 
 }
 .skillBox .icon i {
-  color: #fff;
+  color: 	#FFFAFA;
   font-size: 80px;
 }
 div.icon.iconOdd i {
   font-size: 66px;
 }
 .icon p {
-  color: #fff;
+  color: 	#FFFAFA;
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 2rem;
   text-align: center;
@@ -371,11 +371,11 @@ SECTION
 .form h3 {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 4rem;
-  color: #fff;
+  color: #FFFAFA;
   text-align: center;
 }
 .formBG {
-  background-color: #000;
+  background-color: #111111;
   padding: 22px 0;
 }
 
@@ -391,7 +391,7 @@ SECTION
   margin-bottom: 18px;
   padding: 4px 4px 4px 22px;
   letter-spacing: 1.25px;
-  background-color: #fff;
+  background-color: #FFFAFA;
   border-style: none;
 }
 .form form input#email {
@@ -402,8 +402,8 @@ SECTION
   resize: none;
   letter-spacing: 1.25px;
   padding: 10px 0 0 24px;
-  color: #000;
-  background-color: #fff;
+  color: #111111;
+  background-color: 	#FFFAFA;
   border-style: none;
 }
 .nameAndEmail {
@@ -415,7 +415,7 @@ SECTION
 }
 .nameAndEmail input {
   width: 100%;
-  background-color: #fff;
+  background-color: 	#FFFAFA;
 }
 input#submit {
   margin: 22px 0;
@@ -423,13 +423,13 @@ input#submit {
   font-size: 2rem;
   cursor: pointer;
   border-radius: 0;
-  background-color: #fff;
+  background-color: 	#FFFAFA;
 }
 input#submit:hover {
   cursor: pointer;
 }
 button {
-  background-color: #fff;
+  background-color: 	#FFFAFA;
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -445,11 +445,11 @@ button {
 footer {
   display: flex;
   justify-content: center;
-  background-color: #000;
+  background-color: #111111;
 }
 footer p {
   font-family: "Open Sans", sans-serif;
-  color: #fff;
+  color: 	#FFFAFA;
   letter-spacing: 1.15px;
   line-height: 36px;
   text-align: center;
@@ -466,7 +466,7 @@ footer p {
   justify-content: center;
 }
 .contactIcons div a{
-  color: #fff;
+  color: 	#FFFAFA;
   font-size: 4rem;
 }
 .contactIcons div p{
