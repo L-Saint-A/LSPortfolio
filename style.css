@@ -306,6 +306,12 @@ SECTION
 .projText {
   padding: 22px 0;
 } 
+.HCGTop a {
+  width: 100%;
+}
+.HCGFeather {
+  border: red 1px solid;
+}
 
 /*
 SKILLS
