@@ -65,7 +65,7 @@ HEADER TEXT
   border: #ff0 1px solid;
   display: flex;
   flex-direction: column;
-  padding: 0 0 0 4em;
+  padding: 4em 0 4em 4em;
   text-align: left;
   text-shadow: #000 4px 4px;
   background-color: rgba(0, 0, 0, 0.767);
@@ -73,7 +73,7 @@ HEADER TEXT
 }
 .heroText h1 {
   font-family: sans-serif;
-  color: 	#FFFAFA;
+  color: #FFFAFA;
   font-size: 6rem;
   font-family: 'Rubik Mono One', sans-serif;
   letter-spacing: .12em;
@@ -86,7 +86,7 @@ HEADER TEXT
   font-family: 'Courier Prime', monospace;
   letter-spacing: .12em;
   padding: 0 10em 0 0;
-  margin: 0;
+  margin: 1em 0 0 0;
 }
 
 header {
