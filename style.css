@@ -53,40 +53,39 @@ body {
 /*
 HEADER TEXT
 */
-.heroText {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  text-shadow: #000 4px 4px;
-  background-color: rgba(0, 0, 0, 0.767);
-}
-.heroText h1 {
-  font-family: sans-serif;
-  color: 	#FFFAFA;
-  margin: 0;
-  padding: 0;
-  font-size: 4rem;
-  font-family: 'Rubik Mono One', sans-serif;
-  padding: 16px 44px;
-  text-align: center;
-}
-.heroText p {
-  font-size: 3rem;
-  color: #FFFAFA;
-  font-family: 'Courier Prime', monospace;
-  margin: 0;
-  padding: 4px 58px 20px 58px;
-  letter-spacing: 2.8px;
-}
 .heroContainer {
+  border: red 1px solid;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 85em;
 }
+.heroText {
+  border: #ff0 1px solid;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  text-shadow: #000 4px 4px;
+  background-color: rgba(0, 0, 0, 0.767);
+  width: 100%;
+}
+.heroText h1 {
+  font-family: sans-serif;
+  color: 	#FFFAFA;
+  font-size: 4rem;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.heroText p {
+  font-size: 3rem;
+  color: #FFFAFA;
+  font-family: 'Courier Prime', monospace;
+  letter-spacing: 2.8px;
+}
+
 header {
   background-image: url(./Assets/newBG.png);
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -250,20 +249,12 @@ ABOUT SECTION
 .about .aboutText {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
   background-color: #111111;
-  padding: 22px;
+  padding: 1em 6em;
 }
-.about .aboutText h3 {
-  font-family: 'Rubik Mono One', sans-serif;
-  font-size: 4rem;
-  color: 	#FFFAFA;
-}
-.about .aboutText p {
-  padding: 0 68px;
-  text-align: center;
-}
+
+
 .about .aboutPic {
   display: flex;
 }
@@ -279,7 +270,7 @@ SECTION
 .projTitle {
   text-align: center;
 }
-.projTitle h3 {
+h2 {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 4rem;
   letter-spacing: 6px;
@@ -325,12 +316,7 @@ SECTION
   background-color: #111111;
   padding: 30px 0 20px 0;
 }
-.skillHead h3 {
-  font-family: 'Rubik Mono One', sans-serif;
-  font-size: 4rem;
-  text-align: center;
-  color: 	#FFFAFA;
-}
+
 .skillHead p {
   text-align: center;
   padding: 0 128px;
@@ -375,7 +361,7 @@ SECTION
 .form {
   margin: 80px auto;
 }
-.form h3 {
+.form h2 {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 4rem;
   color: #FFFAFA;
