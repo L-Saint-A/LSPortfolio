@@ -260,8 +260,11 @@ ABOUT SECTION
 }
 
 
-.about .aboutPic {
-  display: flex;
+.CTAButton {
+  font-size: 22px;
+  transition: 0.5s;
+  font-family: "Open Sans", sans-serif;
+  color:#FFFAFA;
 }
 
 /*
